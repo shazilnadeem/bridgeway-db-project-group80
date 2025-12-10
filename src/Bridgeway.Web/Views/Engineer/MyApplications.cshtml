@@ -1,0 +1,23 @@
+@model IList<Bridgeway.Domain.DTOs.ApplicationDto>
+
+<h2>My Applications</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Job Title</th>
+            <th>Status</th>
+            <th>Applied On</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var app in Model)
+    {
+        <tr>
+            <td>@app.JobTitle</td>
+            <td>@app.Status</td>
+            <td>@app.AppliedOn.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>
