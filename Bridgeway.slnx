@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="src/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj" />
+  <Project Path="src/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj" />
+  <Project Path="src/Bridgeway.Cosmos/Bridgeway.Cosmos.csproj" />
+  <Project Path="src/Bridgeway.Domain/Bridgeway.Domain.csproj" />
+  <Project Path="src/Bridgeway.Web/Bridgeway.Web.csproj" />
+</Solution>

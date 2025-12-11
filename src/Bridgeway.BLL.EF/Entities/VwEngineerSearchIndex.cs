@@ -1,0 +1,38 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Bridgeway.BLL.EF.Entities
+{
+    [Table("vw_EngineerSearchIndex")]
+    public class VwEngineerSearchIndex
+    {
+        [Column("engineer_id")]
+        public int EngineerId { get; set; } // Logic Key
+
+        [Column("full_name")]
+        public string FullName { get; set; }
+
+        [Column("email")]
+        public string Email { get; set; }
+
+        [Column("years_experience")]
+        public int YearsExperience { get; set; }
+
+        [Column("timezone")]
+        public string Timezone { get; set; }
+
+        [Column("availability_status")]
+        public string AvailabilityStatus { get; set; }
+
+        [Column("vet_status")]
+        public string VetStatus { get; set; }
+
+        [Column("avg_rating")]
+        public decimal AvgRating { get; set; }
+
+        [Column("skills_list")]
+        public string SkillsList { get; set; }
+
+        [Column("total_ratings")]
+        public int TotalRatings { get; set; }
+    }
+}
