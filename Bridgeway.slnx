@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="src/Bridgeway.BLL.EF/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj" Id="3e71a479-a249-4e8a-9a74-d0ef05bbbc9b" />
-  <Project Path="src/Bridgeway.BLL.SP/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj" Id="4a3d15c9-18c1-49df-bb7f-0feabeffd365" />
-  <Project Path="src/Bridgeway.Cosmos/Bridgeway.Cosmos/Bridgeway.Cosmos.csproj" Id="2ff6256b-660f-425d-8eb2-3c2fc60514fb" />
+  <Project Path="src/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj" />
+  <Project Path="src/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj" />
+  <Project Path="src/Bridgeway.Cosmos/Bridgeway.Cosmos.csproj" />
   <Project Path="src/Bridgeway.Domain/Bridgeway.Domain.csproj" />
-  <Project Path="src/Bridgeway.Web/Bridgeway.Web/Bridgeway.Web.csproj" Id="e08c8b3b-ed82-423c-9722-9b409cbd85e3" />
+  <Project Path="src/Bridgeway.Web/Bridgeway.Web.csproj" />
 </Solution>
