@@ -1,4 +1,3 @@
-// Interfaces/IAnalyticsService.cs
 using System.Collections.Generic;
 using Bridgeway.Domain.DTOs;
 
