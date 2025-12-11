@@ -1,4 +1,3 @@
-// Interfaces/IVettingService.cs
 using System.Collections.Generic;
 using Bridgeway.Domain.DTOs;
 
@@ -6,7 +5,9 @@ namespace Bridgeway.Domain.Interfaces
 {
     public interface IVettingService
     {
-        IList<VettingReviewDto> GetVettingQueue();   // from view vw_VettingQueue
-        void CreateVettingReview(VettingReviewDto review);
+        // Changed return type to match VettingServiceSp
+        IList<VettingQueueItemDto> GetVettingQueue();
+
+        void CreateVettingReview(VettingReviewDto dto);
     }
 }

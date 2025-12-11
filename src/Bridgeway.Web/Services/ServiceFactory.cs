@@ -1,4 +1,4 @@
-// Services/ServiceFactory.cs
+using System;
 using System.Configuration;
 using Bridgeway.BLL.EF;
 using Bridgeway.BLL.SP;
@@ -8,31 +8,83 @@ namespace Bridgeway.Web.Services
 {
     public static class ServiceFactory
     {
+        // Default mode = EF; Admin UI can toggle this at runtime
         public static BllMode CurrentMode { get; set; } = BllMode.Ef;
 
         static ServiceFactory()
         {
-            // read SQL connection string from Web.config
-            var conn = ConfigurationManager.ConnectionStrings["BridgewayDb"].ConnectionString;
-            SqlHelper.ConnectionString = conn;
+            // Set SP layer connection string once
+            var connStrSettings = ConfigurationManager.ConnectionStrings["BridgewayDb"];
+            if (connStrSettings == null || string.IsNullOrWhiteSpace(connStrSettings.ConnectionString))
+            {
+                throw new InvalidOperationException(
+                    "Connection string 'BridgewayDb' is missing from Web.config.");
+            }
+
+            var connStr = connStrSettings.ConnectionString;
+
+            // This assumes Haider's SP layer exposes a SqlHelper with static ConnectionString
+            SqlHelper.ConnectionString = connStr;
         }
 
         public static IEngineerService CreateEngineerService()
         {
             if (CurrentMode == BllMode.Ef)
+            {
                 return new EngineerServiceEf();
-            else
-                return new EngineerServiceSp();
+            }
+
+            return new EngineerServiceSp();
         }
 
         public static IClientService CreateClientService()
         {
             if (CurrentMode == BllMode.Ef)
+            {
                 return new ClientServiceEf();
-            else
-                return new ClientServiceSp();
+            }
+
+            return new ClientServiceSp();
         }
 
-        // same idea for IJobService, IApplicationService, IVettingService, IAnalyticsService
+        public static IJobService CreateJobService()
+        {
+            if (CurrentMode == BllMode.Ef)
+            {
+                return new JobServiceEf();
+            }
+
+            return new JobServiceSp();
+        }
+
+        public static IApplicationService CreateApplicationService()
+        {
+            if (CurrentMode == BllMode.Ef)
+            {
+                return new ApplicationServiceEf();
+            }
+
+            return new ApplicationServiceSp();
+        }
+
+        public static IVettingService CreateVettingService()
+        {
+            if (CurrentMode == BllMode.Ef)
+            {
+                return new VettingServiceEf();
+            }
+
+            return new VettingServiceSp();
+        }
+
+        public static IAnalyticsService CreateAnalyticsService()
+        {
+            if (CurrentMode == BllMode.Ef)
+            {
+                return new AnalyticsServiceEf();
+            }
+
+            return new AnalyticsServiceSp();
+        }
     }
 }
