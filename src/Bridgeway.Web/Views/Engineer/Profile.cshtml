@@ -1,0 +1,40 @@
+@model Bridgeway.Web.Models.EngineerProfileViewModel    //form fields bound to this type
+
+<h2>My Profile</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.EngineerId)
+
+    <div>
+        <label>Full Name</label>
+        @Html.TextBoxFor(m => m.FullName)
+    </div>
+
+    <div>
+        <label>Years of Experience</label>
+        @Html.TextBoxFor(m => m.YearsExperience)
+    </div>
+
+    <div>
+        <label>Timezone</label>
+        @Html.TextBoxFor(m => m.Timezone)
+    </div>
+
+    <div>
+        <label>Availability</label>
+        @Html.TextBoxFor(m => m.AvailabilityStatus)
+    </div>
+
+    <div>
+        <label>Skills (comma separated)</label>
+        @Html.TextBoxFor(m => m.SkillsList)
+    </div>
+
+    <button type="submit">Save</button>
+}
+
+@if (TempData["Message"] != null)
+{
+    <p>@TempData["Message"]</p>
+}

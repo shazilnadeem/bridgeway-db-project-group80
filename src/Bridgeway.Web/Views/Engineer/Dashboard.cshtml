@@ -1,1 +1,36 @@
-<h2>Engineer Dashboard (placeholder)</h2>
+@model Bridgeway.Web.Models.EngineerDashboardViewModel
+
+<h2>Engineer Dashboard</h2>
+
+<p>Welcome, @Model.Engineer.FullName</p>
+<p>Vet status: @Model.Engineer.VetStatus</p>
+<p>Timezone: @Model.Engineer.Timezone</p>
+
+<h3>Recent Applications</h3>
+
+@if (Model.RecentApplications != null && Model.RecentApplications.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Job</th>
+                <th>Status</th>
+                <th>Applied On</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var app in Model.RecentApplications)
+        {
+            <tr>
+                <td>@app.JobTitle</td>
+                <td>@app.Status</td>
+                <td>@app.AppliedOn.ToShortDateString()</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No applications yet.</p>
+}

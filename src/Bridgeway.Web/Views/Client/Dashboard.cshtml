@@ -1,0 +1,35 @@
+@model Bridgeway.Web.Models.ClientDashboardViewModel        // expects clientdashboardviewmodel as its model
+
+
+<h2>Client Dashboard</h2>
+
+<p>Welcome, @Model.Client.CompanyName</p>
+
+<h3>Recent Jobs</h3>
+
+@if (Model.RecentJobs != null && Model.RecentJobs.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Created On</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var job in Model.RecentJobs)
+        {
+            <tr>
+                <td>@job.Title</td>
+                <td>@job.Status</td>
+                <td>@job.CreatedOn.ToShortDateString()</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No jobs yet.</p>
+}
