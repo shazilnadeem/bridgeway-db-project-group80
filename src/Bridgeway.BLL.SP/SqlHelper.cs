@@ -30,7 +30,7 @@ namespace Bridgeway.BLL.SP
         }
 
         // ------------------------------------------------------------
-        // 2. Execute Raw SQL Text (No Return Value) -- [NEW & CRITICAL]
+        // 2. Execute Raw SQL Text (No Return Value)
         // ------------------------------------------------------------
         public static int ExecuteNonQueryText(string sql, params SqlParameter[] parameters)
         {

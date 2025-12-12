@@ -10,7 +10,6 @@ namespace Bridgeway.BLL.EF
 {
     public class EngineerServiceEf : IEngineerService
     {
-        // Overload 1: Maps the detailed profile view to DTO
         private EngineerDto MapToDto(VwEngineerFullProfile entity)
         {
             if (entity == null) return null;
@@ -28,7 +27,6 @@ namespace Bridgeway.BLL.EF
             };
         }
 
-        // Overload 2: Maps the lighter search index view to DTO
         private EngineerDto MapToDto(VwEngineerSearchIndex entity)
         {
             if (entity == null) return null;
@@ -50,7 +48,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Fetch from the full profile view
                 var entity = db.VwEngineerFullProfiles
                                .AsNoTracking()
                                .SingleOrDefault(e => e.EngineerId == engineerId);
@@ -61,7 +58,6 @@ namespace Bridgeway.BLL.EF
 
         public EngineerDto GetCurrentEngineerProfile(int userId)
         {
-            // UserId and EngineerId are 1:1
             return GetById(userId);
         }
         
@@ -71,13 +67,12 @@ namespace Bridgeway.BLL.EF
             {
                 if (db.EngineerProfiles.Any(p => p.EngineerId == userId)) return;
 
-                // Insert new profile with defaults
                 var profile = new EngineerProfile
                 {
                     EngineerId = userId,
                     YearsExperience = 0,
                     VetStatus = "pending",
-                    AvailabilityStatusId = 1, // Default to 'full-time' or similar
+                    AvailabilityStatusId = 1,
                     CreatedAt = DateTime.UtcNow
                 };
 

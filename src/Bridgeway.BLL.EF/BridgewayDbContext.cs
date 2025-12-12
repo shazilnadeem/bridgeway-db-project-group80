@@ -81,7 +81,6 @@ namespace Bridgeway.BLL.EF
             modelBuilder.Entity<VwVettingQueue>().ToTable("vw_VettingQueue");
             modelBuilder.Entity<VwJobCandidatesRanked>().ToTable("vw_JobCandidatesRanked");
             modelBuilder.Entity<VwOpenJobsWithTopCandidate>().ToTable("vw_OpenJobsWithTopCandidate");
-            // --- FIX END ---
 
             base.OnModelCreating(modelBuilder);
         }

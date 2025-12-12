@@ -41,7 +41,6 @@ namespace Bridgeway.BLL.SP
 
         // ------------------------------------------------------------
         // 3. Get applications for an engineer
-        //    (Custom SELECT — no SP exists for this in phase 2 SQL)
         // ------------------------------------------------------------
         public IList<ApplicationDto> GetApplicationsForEngineer(int engineerId)
         {

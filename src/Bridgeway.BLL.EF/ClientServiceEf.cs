@@ -14,7 +14,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Eager load User to get FullName (ContactName) and Email
                 var entity = db.ClientProfiles
                                .Include(c => c.User)
                                .AsNoTracking()
@@ -25,7 +24,7 @@ namespace Bridgeway.BLL.EF
                 return new ClientDto
                 {
                     ClientId = entity.ClientId,
-                    UserId = entity.ClientId, // 1:1 relationship
+                    UserId = entity.ClientId, 
                     CompanyName = entity.CompanyName,
                     Industry = entity.Industry,
                     ContactName = entity.User?.FullName,
@@ -36,7 +35,6 @@ namespace Bridgeway.BLL.EF
 
         public ClientDto GetByUserId(int userId)
         {
-            // Since ClientId is 1:1 with UserId, we strictly reuse GetById
             return GetById(userId);
         }
 
@@ -46,13 +44,12 @@ namespace Bridgeway.BLL.EF
             {
                 if (db.ClientProfiles.Any(c => c.ClientId == userId))
                 {
-                    return; // Profile already exists
+                    return;
                 }
 
                 var profile = new ClientProfile
                 {
                     ClientId = userId,
-                    // Default values as allowed by schema
                     CompanyName = "New Company", 
                     Industry = "N/A",
                     CreatedAt = DateTime.UtcNow
@@ -67,7 +64,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Query the view that joins Job + Client + Skills
                 var jobs = db.VwJobsWithClientAndSkills
                              .AsNoTracking()
                              .Where(j => j.ClientId == clientId)
@@ -78,11 +74,11 @@ namespace Bridgeway.BLL.EF
                 {
                     JobId = j.JobId,
                     ClientId = j.ClientId,
-                    Title = j.JobTitle,             // Maps DB 'job_title' to DTO 'Title'
+                    Title = j.JobTitle,
                     Description = j.JobDescription,
                     Status = j.JobStatus,
                     CreatedAt = j.CreatedAt,
-                    UpdatedAt = j.UpdatedAt,        // Mapped as per your latest update
+                    UpdatedAt = j.UpdatedAt,
                     RequiredSkills = j.RequiredSkills,
                     ClientName = j.CompanyName,
                     ClientIndustry = j.Industry

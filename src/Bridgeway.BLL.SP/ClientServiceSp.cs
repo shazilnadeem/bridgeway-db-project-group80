@@ -8,14 +8,11 @@ namespace Bridgeway.BLL.SP
 {
     public class ClientServiceSp : IClientService
     {
-        // 1. Get client by User ID
         public ClientDto GetByUserId(int userId)
         {
-            // Reusing the same logic for now, assuming ClientID = UserID in your test data
             return GetById(userId);
         }
 
-        // 2. REQUIRED BY INTERFACE: GetById
         public ClientDto GetById(int clientId)
         {
             string sql = @"
@@ -38,10 +35,8 @@ namespace Bridgeway.BLL.SP
             }
         }
 
-        // 3. REQUIRED BY INTERFACE: RegisterClient
         public void RegisterClient(int userId)
         {
-            // We insert with a default company name because the column is NOT NULL in the DB.
             string sql = @"
                 INSERT INTO tbl_Client_Profile (client_id, company_name, industry, created_at)
                 VALUES (@ClientId, 'Pending Setup', NULL, SYSDATETIME())";
@@ -49,13 +44,11 @@ namespace Bridgeway.BLL.SP
             SqlHelper.ExecuteNonQueryText(sql, new SqlParameter("@ClientId", userId));
         }
 
-        // 4. REQUIRED BY INTERFACE: GetClientJobs
         public IList<JobDto> GetClientJobs(int clientId)
         {
             return GetJobsForClient(clientId);
         }
 
-        // Helper for internal use
         public IList<JobDto> GetJobsForClient(int clientId)
         {
             var list = new List<JobDto>();

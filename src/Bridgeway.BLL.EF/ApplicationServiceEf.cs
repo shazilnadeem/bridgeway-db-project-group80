@@ -13,7 +13,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Check for existing application to prevent duplicates
                 if (db.JobApplications.Any(a => a.EngineerId == engineerId && a.JobId == jobId))
                 {
                     throw new InvalidOperationException("Engineer has already applied to this job.");
@@ -24,8 +23,6 @@ namespace Bridgeway.BLL.EF
                     EngineerId = engineerId,
                     JobId = jobId,
                     Status = "pending",
-                    // MatchScore is calculated by the DB trigger 'trg_JobApplication_AfterInsert' 
-                    // or set to 0 by default if null.
                     CreatedAt = DateTime.UtcNow
                 };
 
@@ -38,7 +35,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Find existing application using composite key
                 var app = db.JobApplications.Find(engineerId, jobId);
 
                 if (app == null)
@@ -46,7 +42,6 @@ namespace Bridgeway.BLL.EF
                     throw new KeyNotFoundException("Application not found.");
                 }
 
-                // Validate status (optional, but good practice to match DB constraints)
                 var validStatuses = new[] { "pending", "shortlisted", "accepted", "rejected" };
                 if (!validStatuses.Contains(newStatus.ToLower()))
                 {
@@ -56,8 +51,6 @@ namespace Bridgeway.BLL.EF
                 app.Status = newStatus;
                 app.UpdatedAt = DateTime.UtcNow;
 
-                // Note: The DB trigger 'trg_JobApplication_AfterUpdate' will automatically 
-                // handle side effects (like updating Job status) when changes are saved.
                 db.SaveChanges();
             }
         }
@@ -66,7 +59,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Join JobApplications -> Jobs -> ClientProfiles to populate DTO
                 var query = from ja in db.JobApplications
                             join j in db.Jobs on ja.JobId equals j.JobId
                             join c in db.ClientProfiles on j.ClientId equals c.ClientId
@@ -102,7 +94,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Join JobApplications -> Users (via EngineerId) to get Candidate Name
                 var query = from ja in db.JobApplications
                             join u in db.Users on ja.EngineerId equals u.UserId
                             where ja.JobId == jobId

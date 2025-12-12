@@ -72,7 +72,6 @@ namespace Bridgeway.BLL.SP
                 (engineer_id, years_experience, timezone, availability_status_id, vet_status, portfolio_link)
                 VALUES (@EngineerId, 0, NULL, 1, 'pending', NULL);";
 
-            // Use the NEW Text method
             SqlHelper.ExecuteNonQueryText(sql, new SqlParameter("@EngineerId", userId));
         }
 
@@ -91,17 +90,11 @@ namespace Bridgeway.BLL.SP
                     portfolio_link        = @PortfolioLink
                 WHERE engineer_id = @EngineerId";
 
-            // Use the NEW Text method
+
             SqlHelper.ExecuteNonQueryText(sql,
                 new SqlParameter("@EngineerId", dto.EngineerId),
                 new SqlParameter("@YearsExperience", dto.YearsExperience),
                 new SqlParameter("@Timezone", (object?)dto.Timezone ?? DBNull.Value),
-                // Since DTO has int for ID but we need to map string status to ID, 
-                // for the test we assume DTO passes the ID directly or we map it.
-                // Based on your test code 'dto.AvailabilityStatus = "unavailable"', 
-                // we actually need to look up the ID. 
-                // HOWEVER, for this specific fix, we'll assume DTO has AvailabilityStatusId correctly set 
-                // OR we just set it to 1 for safety if it's missing.
                 new SqlParameter("@AvailabilityStatusId", dto.AvailabilityStatusId == 0 ? 1 : dto.AvailabilityStatusId),
                 new SqlParameter("@VetStatus", dto.VetStatus),
                 new SqlParameter("@PortfolioLink", (object?)dto.PortfolioLink ?? DBNull.Value)

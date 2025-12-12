@@ -29,7 +29,7 @@ namespace Bridgeway.BLL.SP
                 if (reader.Read())
                 {
                     int jobId = Convert.ToInt32(reader["job_id"]);
-                    createdJob = GetJob(jobId);  // fetch complete job via view
+                    createdJob = GetJob(jobId);
                 }
             }
 

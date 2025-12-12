@@ -13,7 +13,6 @@ namespace Bridgeway.BLL.SP
         {
             var list = new List<VettingQueueItemDto>();
 
-            // Only show engineers who are still pending
             string sql = "SELECT * FROM vw_VettingQueue WHERE current_vet_status = 'pending' ORDER BY last_review_date ASC";
 
             using (var reader = SqlHelper.ExecuteReaderText(sql))
@@ -37,7 +36,6 @@ namespace Bridgeway.BLL.SP
 
         public void CreateVettingReview(VettingReviewDto review)
         {
-            // 1. Create the Review Record (Keep 'recommended' here for scoring)
             var parameters = new[]
             {
                 new SqlParameter("@EngineerId", review.EngineerId),
@@ -52,7 +50,6 @@ namespace Bridgeway.BLL.SP
 
             SqlHelper.ExecuteNonQuery("sp_CreateVettingReview", parameters);
 
-            // 2. FIX: Map 'recommended' -> 'approved' for the Profile Table
             string profileStatus = (review.Decision == "recommended") ? "approved" : review.Decision;
 
             string updateSql = @"
@@ -61,7 +58,7 @@ namespace Bridgeway.BLL.SP
                 WHERE engineer_id = @EngId";
 
             SqlHelper.ExecuteNonQueryText(updateSql, 
-                new SqlParameter("@NewStatus", profileStatus), // Now sends 'approved' instead of 'recommended'
+                new SqlParameter("@NewStatus", profileStatus),
                 new SqlParameter("@EngId", review.EngineerId)
             );
         }

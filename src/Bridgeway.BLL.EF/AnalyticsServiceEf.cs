@@ -15,13 +15,11 @@ namespace Bridgeway.BLL.EF
             {
                 var pYear = new SqlParameter("@Year", year);
 
-                // Execute SP and map to a temporary class that matches the SQL column names exactly
                 var rawData = db.Database.SqlQuery<MonthlyStatsSpResult>(
                     "EXEC sp_GetMonthlyPlatformStats @Year", 
                     pYear
                 ).ToList();
 
-                // Map raw SQL results to the Domain DTO
                 return rawData.Select(r => new MonthlyStatsDto
                 {
                     MonthNumber = r.month_num,
@@ -36,7 +34,6 @@ namespace Bridgeway.BLL.EF
             }
         }
 
-        // Private helper class to match the Stored Procedure's snake_case output columns
         private class MonthlyStatsSpResult
         {
             public int month_num { get; set; }
