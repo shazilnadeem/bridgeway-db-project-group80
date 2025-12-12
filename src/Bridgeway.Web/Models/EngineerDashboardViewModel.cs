@@ -11,5 +11,6 @@ namespace Bridgeway.Web.Models
         // A small list of recent applications to show on the dashboard
         public IList<ApplicationDto> RecentApplications { get; set; }
         // EngineerDto and ApplicationDto are objects already defined in Bridgeway.Domain
+        public ApplicationDto CurrentJob { get; set; }
     }
 }

@@ -1,12 +1,24 @@
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\bin\Debug\net9.0\Bridgeway.Domain.deps.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\bin\Debug\net9.0\Bridgeway.Domain.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\bin\Debug\net9.0\Bridgeway.Domain.pdb
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\Bridgeway.Domain.GeneratedMSBuildEditorConfig.editorconfig
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\Bridgeway.Domain.AssemblyInfoInputs.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\Bridgeway.Domain.AssemblyInfo.cs
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\Bridgeway.Domain.csproj.CoreCompileInputs.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\Bridgeway.Domain.sourcelink.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\Bridgeway.Domain.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\refint\Bridgeway.Domain.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\Bridgeway.Domain.pdb
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net9.0\ref\Bridgeway.Domain.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/bin/Debug/net9.0/Bridgeway.Domain.deps.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/bin/Debug/net9.0/Bridgeway.Domain.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/bin/Debug/net9.0/Bridgeway.Domain.pdb
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.AssemblyInfoInputs.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.AssemblyInfo.cs
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.csproj.CoreCompileInputs.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.sourcelink.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/refint/Bridgeway.Domain.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.pdb
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Domain/obj/Debug/net9.0/ref/Bridgeway.Domain.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/bin/Debug/net9.0/Bridgeway.Domain.deps.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/bin/Debug/net9.0/Bridgeway.Domain.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/bin/Debug/net9.0/Bridgeway.Domain.pdb
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.AssemblyInfoInputs.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.AssemblyInfo.cs
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.csproj.CoreCompileInputs.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.sourcelink.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/refint/Bridgeway.Domain.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/Bridgeway.Domain.pdb
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/Debug/net9.0/ref/Bridgeway.Domain.dll

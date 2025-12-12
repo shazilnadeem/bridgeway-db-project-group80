@@ -48,7 +48,7 @@
         int offset = 0;
         foreach (var job in Model.RecentJobs)
         {
-            <div style="position: absolute; top: @(350 + offset)px; left: 0; width: 100%;">
+            <div style="position: absolute; top: @(2380 + offset)px; left: 0; width: 100%;">
                 
                 <div class="rectangle-4" style="top: 0; left: 106px; width: 1400px; height: 70px; background-color: #4e505ea6; border-radius: 10px;"></div>
                 
@@ -59,7 +59,7 @@
                 <div class="text-wrapper-13" style="top: 15px; left: 1250px; font-size: 30px;">@job.CreatedAt.ToShortDateString()</div>
                 
             </div>
-            offset += 90; // Shift the next row down
+            offset += 160; // Shift the next row down
         }
     }
     else

@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Web\\Bridgeway.Web.csproj": {}
+    "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/Bridgeway.Web.csproj": {}
   },
   "projects": {
-    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj": {
+    "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj",
+        "projectUniqueName": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj",
         "projectName": "Bridgeway.BLL.EF",
-        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj",
-        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
-        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\obj\\",
+        "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj",
+        "packagesPath": "/Users/taimurjahanzaib/.nuget/packages/",
+        "outputPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.EF/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/taimurjahanzaib/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
-                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj"
+              "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj": {
+                "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj"
               }
             }
           }
@@ -71,36 +69,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj": {
+    "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj",
+        "projectUniqueName": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj",
         "projectName": "Bridgeway.BLL.SP",
-        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj",
-        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
-        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\obj\\",
+        "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj",
+        "packagesPath": "/Users/taimurjahanzaib/.nuget/packages/",
+        "outputPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.SP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/taimurjahanzaib/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
-                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj"
+              "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj": {
+                "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj"
               }
             }
           }
@@ -142,28 +138,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
+    "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj",
+        "projectUniqueName": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj",
         "projectName": "Bridgeway.Domain",
-        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj",
-        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
-        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\obj\\",
+        "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj",
+        "packagesPath": "/Users/taimurjahanzaib/.nuget/packages/",
+        "outputPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/taimurjahanzaib/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -203,42 +197,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Web\\Bridgeway.Web.csproj": {
+    "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/Bridgeway.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Web\\Bridgeway.Web.csproj",
+        "projectUniqueName": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/Bridgeway.Web.csproj",
         "projectName": "Bridgeway.Web",
-        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Web\\Bridgeway.Web.csproj",
-        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
-        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Web\\obj\\",
+        "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/Bridgeway.Web.csproj",
+        "packagesPath": "/Users/taimurjahanzaib/.nuget/packages/",
+        "outputPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/taimurjahanzaib/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj": {
-                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj"
+              "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj": {
+                "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.EF/Bridgeway.BLL.EF.csproj"
               },
-              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj": {
-                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj"
+              "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj": {
+                "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.BLL.SP/Bridgeway.BLL.SP.csproj"
               },
-              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
-                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj"
+              "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj": {
+                "projectPath": "/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Domain/Bridgeway.Domain.csproj"
               }
             }
           }
@@ -277,7 +269,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

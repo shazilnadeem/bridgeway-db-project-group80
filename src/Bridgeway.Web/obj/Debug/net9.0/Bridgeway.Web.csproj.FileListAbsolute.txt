@@ -1,85 +1,170 @@
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Web.staticwebassets.runtime.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Web.staticwebassets.endpoints.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Web.exe
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Web.deps.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Web.runtimeconfig.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Web.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Web.pdb
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\EntityFramework.SqlServer.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\EntityFramework.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\System.CodeDom.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\System.Data.SqlClient.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\System.Drawing.Common.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\System.Security.Permissions.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\System.Windows.Extensions.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win-arm64\native\sni.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win-x64\native\sni.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win-x86\native\sni.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.BLL.EF.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.BLL.SP.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Domain.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.BLL.EF.pdb
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.BLL.SP.pdb
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\Bridgeway.Domain.pdb
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.csproj.AssemblyReference.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\rpswa.dswa.cache.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.GeneratedMSBuildEditorConfig.editorconfig
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.AssemblyInfoInputs.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.AssemblyInfo.cs
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.csproj.CoreCompileInputs.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.MvcApplicationPartsAssemblyInfo.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.RazorAssemblyInfo.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.RazorAssemblyInfo.cs
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.sourcelink.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\rjimswa.dswa.cache.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\scopedcss\bundle\Bridgeway.Web.styles.css
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\f62wo9wm44-lmb7pej1ie.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\qlirej4es8-7ev1i8tgzh.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\sy2j2d0lbo-dtf3w0bant.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\jpg5zzxb15-9i3oe66s8d.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\to2qg5dqfc-np077cfmxi.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\o8ydfmt063-pcmre0xo01.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\aa6y2bjq3z-250ijton8e.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\3jutji74fm-7ev1i8tgzh.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\8qraby3gw8-r79tbx96ck.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\52gwssxnq6-8eyafauldi.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\5vmfgp56c9-9i3oe66s8d.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\qhcefsk4tu-kzsq1qyzvq.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\y7kxj36y3b-dt3suemxd1.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\2w8s8a6iwa-u1qxelk5jo.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\qa2og1qobn-5ver2it7n8.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\mn7k57r6jn-eskbhra9bf.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\44ot6b38z2-y5afkonab9.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\74tc4oss58-6axaug4yzu.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\iareo9nb67-mx3xa5i03n.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\vstjda0qe8-8cygo7j1xr.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\pfeer1uefq-z0ogmbg002.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\wjbhtdhevl-cx9b1hffrt.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\dmnsrnrx48-dr2k4vn303.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\lmantfzao7-u6scgnck3p.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\t991mmcwag-38jdwqtb2k.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\h4oo7xz137-g4dgzgjw3w.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\compressed\1wn815xcvp-5zaqwa3pxh.gz
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\staticwebassets.build.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\staticwebassets.build.json.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\staticwebassets.development.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgewa.CFE66499.Up2Date
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\refint\Bridgeway.Web.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.pdb
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\Bridgeway.Web.genruntimeconfig.cache
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\obj\Debug\net9.0\ref\Bridgeway.Web.dll
-E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Web\bin\Debug\net9.0\appsettings.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.staticwebassets.runtime.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.staticwebassets.endpoints.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.exe
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.deps.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.runtimeconfig.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.pdb
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/EntityFramework.SqlServer.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/EntityFramework.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/System.CodeDom.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/System.Configuration.ConfigurationManager.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/System.Data.SqlClient.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/System.Drawing.Common.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/System.Security.Permissions.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/System.Windows.Extensions.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win-arm64/native/sni.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win-x64/native/sni.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win-x86/native/sni.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/unix/lib/net8.0/System.Data.SqlClient.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net8.0/System.Data.SqlClient.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.EF.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.SP.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Domain.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.EF.pdb
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.SP.pdb
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Domain.pdb
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.csproj.AssemblyReference.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/rpswa.dswa.cache.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.GeneratedMSBuildEditorConfig.editorconfig
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.AssemblyInfoInputs.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.AssemblyInfo.cs
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.csproj.CoreCompileInputs.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.MvcApplicationPartsAssemblyInfo.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.RazorAssemblyInfo.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.RazorAssemblyInfo.cs
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.sourcelink.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/rjimswa.dswa.cache.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/scopedcss/bundle/Bridgeway.Web.styles.css
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/f62wo9wm44-lmb7pej1ie.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/qlirej4es8-7ev1i8tgzh.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/sy2j2d0lbo-dtf3w0bant.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/jpg5zzxb15-9i3oe66s8d.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/to2qg5dqfc-np077cfmxi.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/o8ydfmt063-pcmre0xo01.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/aa6y2bjq3z-250ijton8e.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/3jutji74fm-7ev1i8tgzh.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/8qraby3gw8-r79tbx96ck.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/52gwssxnq6-8eyafauldi.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/5vmfgp56c9-9i3oe66s8d.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/qhcefsk4tu-kzsq1qyzvq.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/y7kxj36y3b-dt3suemxd1.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/2w8s8a6iwa-u1qxelk5jo.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/qa2og1qobn-5ver2it7n8.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/mn7k57r6jn-eskbhra9bf.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/44ot6b38z2-y5afkonab9.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/74tc4oss58-6axaug4yzu.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/iareo9nb67-mx3xa5i03n.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/vstjda0qe8-8cygo7j1xr.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/pfeer1uefq-z0ogmbg002.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/wjbhtdhevl-cx9b1hffrt.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/dmnsrnrx48-dr2k4vn303.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/lmantfzao7-u6scgnck3p.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/t991mmcwag-38jdwqtb2k.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/h4oo7xz137-g4dgzgjw3w.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/compressed/1wn815xcvp-5zaqwa3pxh.gz
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.build.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.build.json.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.development.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgewa.CFE66499.Up2Date
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/refint/Bridgeway.Web.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.pdb
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.genruntimeconfig.cache
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/obj/Debug/net9.0/ref/Bridgeway.Web.dll
+E:/LUMS 27'/Junior Year/Fall Semester/CS340 - Databases/PROJECT/src/Bridgeway.Web/bin/Debug/net9.0/appsettings.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/appsettings.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.staticwebassets.runtime.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.staticwebassets.endpoints.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.deps.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.runtimeconfig.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Web.pdb
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/EntityFramework.SqlServer.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/EntityFramework.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/System.CodeDom.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/System.Configuration.ConfigurationManager.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/System.Data.SqlClient.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/System.Drawing.Common.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/System.Security.Permissions.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/System.Windows.Extensions.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win-arm64/native/sni.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win-x64/native/sni.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win-x86/native/sni.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/unix/lib/net8.0/System.Data.SqlClient.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net8.0/System.Data.SqlClient.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.EF.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.SP.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Domain.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.EF.pdb
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.BLL.SP.pdb
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/bin/Debug/net9.0/Bridgeway.Domain.pdb
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.csproj.AssemblyReference.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.GeneratedMSBuildEditorConfig.editorconfig
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.AssemblyInfoInputs.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.AssemblyInfo.cs
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.csproj.CoreCompileInputs.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.MvcApplicationPartsAssemblyInfo.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.RazorAssemblyInfo.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.RazorAssemblyInfo.cs
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.sourcelink.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/scopedcss/bundle/Bridgeway.Web.styles.css
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/f62wo9wm44-lmb7pej1ie.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/qlirej4es8-7ev1i8tgzh.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/sy2j2d0lbo-dtf3w0bant.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/jpg5zzxb15-9i3oe66s8d.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/to2qg5dqfc-np077cfmxi.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/o8ydfmt063-pcmre0xo01.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/aa6y2bjq3z-250ijton8e.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/3jutji74fm-7ev1i8tgzh.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/8qraby3gw8-r79tbx96ck.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/52gwssxnq6-8eyafauldi.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/5vmfgp56c9-9i3oe66s8d.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/qhcefsk4tu-kzsq1qyzvq.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/y7kxj36y3b-dt3suemxd1.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/2w8s8a6iwa-u1qxelk5jo.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/qa2og1qobn-5ver2it7n8.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/mn7k57r6jn-eskbhra9bf.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/44ot6b38z2-y5afkonab9.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/74tc4oss58-6axaug4yzu.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/iareo9nb67-mx3xa5i03n.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/vstjda0qe8-8cygo7j1xr.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/pfeer1uefq-z0ogmbg002.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/wjbhtdhevl-cx9b1hffrt.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/dmnsrnrx48-dr2k4vn303.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/lmantfzao7-u6scgnck3p.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/t991mmcwag-38jdwqtb2k.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/h4oo7xz137-g4dgzgjw3w.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/compressed/1wn815xcvp-5zaqwa3pxh.gz
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.build.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.build.json.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.development.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgewa.CFE66499.Up2Date
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/refint/Bridgeway.Web.dll
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.pdb
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/Bridgeway.Web.genruntimeconfig.cache
+/Users/taimurjahanzaib/Desktop/junior/CS-340/bridgeway-db-project-group80/src/Bridgeway.Web/obj/Debug/net9.0/ref/Bridgeway.Web.dll

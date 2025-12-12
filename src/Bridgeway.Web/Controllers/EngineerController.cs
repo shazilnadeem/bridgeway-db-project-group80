@@ -25,12 +25,16 @@ namespace Bridgeway.Web.Controllers
             // Get all applications made by this engineer.
             var applications = applicationService.GetApplicationsForEngineer(engineerProfile.EngineerId);
 
+            var currentJob = applications.FirstOrDefault(a => 
+            string.Equals(a.Status, "accepted", System.StringComparison.OrdinalIgnoreCase));
+
             // Build a view model to pass to the Razor view.
             var model = new EngineerDashboardViewModel
             {
                 Engineer = engineerProfile,
                 // Only show top 5 on the dashboard
-                RecentApplications = applications.Take(5).ToList()
+                RecentApplications = applications.Take(5).ToList(),
+                CurrentJob = currentJob
             };
 
             // Render the Dashboard view with this model.
