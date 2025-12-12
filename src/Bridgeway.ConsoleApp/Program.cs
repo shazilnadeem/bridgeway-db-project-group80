@@ -118,7 +118,7 @@ class Program
         Console.WriteLine("1. Create New Job");
         Console.WriteLine("2. View Matches (Hire Engineers)");
         Console.WriteLine("3. Active Contracts (Rate Engineers)");
-        Console.WriteLine("4. Edit Company Profile"); // <--- NEW OPTION
+        Console.WriteLine("4. Edit Company Profile");
         Console.WriteLine("5. View Detailed Profile (Any Engineer)"); 
         Console.WriteLine("6. Logout");
         Console.Write("Choice: ");
@@ -225,7 +225,7 @@ class Program
                 else Console.WriteLine("   (Work in progress)");
             }
         }
-        else if (choice == "4") // EDIT PROFILE (NEW FEATURE)
+        else if (choice == "4") // EDIT PROFILE
         {
             Console.WriteLine($"\n--- EDIT PROFILE ---");
             Console.WriteLine($"Current Company Name: {clientProfile.CompanyName}");
@@ -341,7 +341,7 @@ class Program
         
         Console.WriteLine("\n--- ADMIN DASHBOARD ---");
         Console.WriteLine("1. Vetting Queue (Approve Engineers)");
-        Console.WriteLine("2. User Management (Impersonate)"); // NEW FEATURE
+        Console.WriteLine("2. User Management");
         Console.WriteLine("3. Platform Analytics"); 
         Console.WriteLine("4. Logout");
         Console.Write("Choice: ");
@@ -361,11 +361,10 @@ class Program
             Console.Write("\nEnter Engineer ID to Vet (or 0): ");
             if (int.TryParse(Console.ReadLine(), out int engId) && engId > 0)
             {
-                HelperMethods.DisplayFullEngineerProfile(engId); // View details first
+                HelperMethods.DisplayFullEngineerProfile(engId); 
 
                 Console.WriteLine("\nDecision: 1. Approve  2. Reject");
                 var input = Console.ReadLine();
-                // FIX: "recommended" is the magic word for your SQL logic to hit 100% score
                 var decision = (input == "1") ? "recommended" : "rejected"; 
                 
                 string reason = "";
@@ -394,7 +393,7 @@ class Program
                 catch (Exception ex) { Console.WriteLine($"Error: {ex.Message}"); }
             }
         }
-        else if (choice == "2") // IMPERSONATION
+        else if (choice == "2") // LOGGING IN AS THAT USERR
         {
             Console.WriteLine("\n--- ALL USERS ---");
             var users = HelperMethods.GetAllUsers();
@@ -448,7 +447,7 @@ public class UserSummaryDto { public int Id; public string Name; public string R
 
 public static class HelperMethods
 {
-    // --- DISPLAY HELPERS ---
+    // DISPLAY HELPERS
     public static void DisplayFullEngineerProfile(int engineerId)
     {
         using (var conn = new SqlConnection(ConsoleFactory.ConnString))
@@ -480,7 +479,7 @@ public static class HelperMethods
                         Console.WriteLine($"Location:    {r["timezone"]}");
                         Console.WriteLine($"Vet Status:  {r["vet_status"]}");
                         Console.WriteLine($"Bio/Link:    {r["portfolio_link"]}");
-                        Console.WriteLine($"Skills:      {r["skills"]}"); // Shows skill names
+                        Console.WriteLine($"Skills:      {r["skills"]}"); 
                         Console.WriteLine("==========================================");
                     }
                     else Console.WriteLine("Engineer not found.");
@@ -489,7 +488,7 @@ public static class HelperMethods
         }
     }
 
-    // --- DATA HELPERS ---
+    // DATA HELPERS
     public static List<UserSummaryDto> GetAllUsers()
     {
         var list = new List<UserSummaryDto>();
@@ -702,13 +701,11 @@ public static class HelperMethods
 
 public static class AuthHelperExtensions 
 {
-    // Updated to support Industry (Optional)
     public static void UpdateClientProfile(int userId, string compName, string industry = null)
     {
         using (var conn = new SqlConnection(ConsoleFactory.ConnString))
         {
             conn.Open();
-            // Updates Name and Industry if profile exists, otherwise inserts new
             string q = @"
                 IF EXISTS (SELECT 1 FROM tbl_Client_Profile WHERE client_id=@u)
                    UPDATE tbl_Client_Profile SET company_name=@c, industry=@i WHERE client_id=@u
@@ -717,7 +714,7 @@ public static class AuthHelperExtensions
             
             using (var cmd = new SqlCommand(q, conn)) {
                 cmd.Parameters.AddWithValue("@c", compName);
-                cmd.Parameters.AddWithValue("@i", (object)industry ?? DBNull.Value); // Handle nulls
+                cmd.Parameters.AddWithValue("@i", (object)industry ?? DBNull.Value);
                 cmd.Parameters.AddWithValue("@u", userId);
                 cmd.ExecuteNonQuery();
             }

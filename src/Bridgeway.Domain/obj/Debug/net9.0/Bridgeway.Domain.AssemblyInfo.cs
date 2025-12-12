@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bridgeway.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b6f32c64332929aca1b0730394d89991de2edd0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba1b3d289f3fbb68a219100cda7907141d50694c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bridgeway.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bridgeway.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

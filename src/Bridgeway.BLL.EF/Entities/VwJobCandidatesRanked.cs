@@ -5,8 +5,6 @@ namespace Bridgeway.BLL.EF.Entities
     [Table("vw_JobCandidatesRanked")]
     public class VwJobCandidatesRanked
     {
-        // This view has no single unique ID, so we might need a composite key in OnModelCreating
-        // typically (JobId, EngineerId) is unique.
         
         [Column("job_id")]
         public int JobId { get; set; }

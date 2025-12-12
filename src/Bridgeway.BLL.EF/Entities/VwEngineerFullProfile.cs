@@ -6,7 +6,7 @@ namespace Bridgeway.BLL.EF.Entities
     public class VwEngineerFullProfile
     {
         [Column("engineer_id")]
-        public int EngineerId { get; set; } // We will use this as Key in Fluent API
+        public int EngineerId { get; set; } 
 
         [Column("full_name")]
         public string FullName { get; set; }

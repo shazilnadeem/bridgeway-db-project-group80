@@ -14,12 +14,11 @@ namespace Bridgeway.BLL.EF.Entities
         public int SkillId { get; set; }
 
         [Column("proficiency_score")]
-        public byte ProficiencyScore { get; set; } // mapped from TINYINT
+        public byte ProficiencyScore { get; set; } 
 
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
 
-        // Navigation properties
         [ForeignKey("EngineerId")]
         public virtual EngineerProfile Engineer { get; set; }
 

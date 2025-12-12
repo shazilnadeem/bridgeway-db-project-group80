@@ -7,19 +7,16 @@ namespace Bridgeway.ConsoleApp
 {
     public static class ConsoleFactory
     {
-        // 1. UPDATED CONNECTION STRING
         public static string ConnString = "Server=localhost,1433;Database=BridgewayDB;User Id=sa;Password=Shazee03!;TrustServerCertificate=True;";
         
-        public static bool IsEfMode { get; set; } = false; // Default to SP
+        public static bool IsEfMode { get; set; } = false; 
 
         static ConsoleFactory()
         {
-            // 2. CRITICAL: Initialize BOTH layers so they can connect
             BridgewayDbContext.ConnectionString = ConnString;
             SqlHelper.ConnectionString = ConnString; 
         }
 
-        // --- Service Factory Methods ---
 
         public static IJobService GetJobService()
         {

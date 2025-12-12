@@ -7,7 +7,7 @@ namespace Bridgeway.BLL.EF.Entities
     public class VwVettingQueue
     {
         [Column("engineer_id")]
-        public int EngineerId { get; set; } // Logic Key
+        public int EngineerId { get; set; } 
 
         [Column("engineer_name")]
         public string EngineerName { get; set; }

@@ -7,7 +7,7 @@ namespace Bridgeway.BLL.EF.Entities
     public class VwJobWithClientAndSkills
     {
         [Column("job_id")]
-        public int JobId { get; set; } // Treat as Key
+        public int JobId { get; set; } 
 
         [Column("job_title")]
         public string JobTitle { get; set; }

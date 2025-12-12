@@ -42,13 +42,11 @@ namespace Bridgeway.BLL.EF
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            // --- Composite Keys ---
             modelBuilder.Entity<EngineerSkill>().HasKey(es => new { es.EngineerId, es.SkillId });
             modelBuilder.Entity<JobSkill>().HasKey(js => new { js.JobId, js.SkillId });
             modelBuilder.Entity<JobApplication>().HasKey(ja => new { ja.EngineerId, ja.JobId });
             modelBuilder.Entity<EndorsementRating>().HasKey(er => new { er.ClientId, er.EngineerId });
 
-            // --- Keys for Views ---
             modelBuilder.Entity<VwEngineerFullProfile>().HasKey(v => v.EngineerId);
             modelBuilder.Entity<VwEngineerSearchIndex>().HasKey(v => v.EngineerId);
             modelBuilder.Entity<VwJobWithClientAndSkills>().HasKey(v => v.JobId);
@@ -57,7 +55,6 @@ namespace Bridgeway.BLL.EF
             modelBuilder.Entity<VwJobCandidatesRanked>().HasKey(v => new { v.JobId, v.EngineerId });
             modelBuilder.Entity<VwOpenJobsWithTopCandidate>().HasKey(v => v.JobId);
 
-            // --- Explicit Table Mapping (Standard Tables) ---
             modelBuilder.Entity<User>().ToTable("tbl_User");
             modelBuilder.Entity<AvailabilityStatus>().ToTable("tbl_Availability_Status");
             modelBuilder.Entity<EngineerProfile>().ToTable("tbl_Engineer_Profile");
@@ -72,8 +69,7 @@ namespace Bridgeway.BLL.EF
             modelBuilder.Entity<EngineerRatingCache>().ToTable("tbl_Engineer_RatingCache");
             modelBuilder.Entity<EngineerArchive>().ToTable("tbl_Engineer_Archive");
 
-            // --- FIX START: Explicit View Mapping ---
-            // These lines map the C# classes to your SQL Views (which start with 'vw_')
+
             modelBuilder.Entity<VwEngineerFullProfile>().ToTable("vw_EngineerFullProfile");
             modelBuilder.Entity<VwEngineerSearchIndex>().ToTable("vw_EngineerSearchIndex");
             modelBuilder.Entity<VwJobWithClientAndSkills>().ToTable("vw_JobWithClientAndSkills");

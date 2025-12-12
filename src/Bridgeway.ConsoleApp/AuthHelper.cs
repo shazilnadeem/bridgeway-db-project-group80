@@ -5,7 +5,6 @@ namespace Bridgeway.ConsoleApp
 {
     public static class AuthHelper
     {
-        // Returns UserID if successful, 0 if failed. Out parameter returns the Role.
         public static int Login(string email, string password, out string role)
         {
             role = "";

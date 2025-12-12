@@ -6,7 +6,7 @@ namespace Bridgeway.BLL.EF.Entities
     public class VwOpenJobsWithTopCandidate
     {
         [Column("job_id")]
-        public int JobId { get; set; } // Logic Key
+        public int JobId { get; set; } 
 
         [Column("job_title")]
         public string JobTitle { get; set; }

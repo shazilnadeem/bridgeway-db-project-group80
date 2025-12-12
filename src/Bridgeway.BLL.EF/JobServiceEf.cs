@@ -26,9 +26,8 @@ namespace Bridgeway.BLL.EF
                 };
 
                 db.Jobs.Add(job);
-                db.SaveChanges(); // Generates the JobId
+                db.SaveChanges();
 
-                // 2. Insert Skills into tbl_Job_Skills (The "Normalization" Step)
                 if (dto.SkillIds != null && dto.SkillIds.Count > 0)
                 {
                     foreach (var skillId in dto.SkillIds)
@@ -37,7 +36,7 @@ namespace Bridgeway.BLL.EF
                         {
                             JobId = job.JobId,
                             SkillId = skillId,
-                            ImportanceLevel = "required", // Default
+                            ImportanceLevel = "required", 
                             CreatedAt = DateTime.UtcNow
                         };
                         db.JobSkills.Add(jobSkill);
@@ -53,7 +52,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Use the view that already joins Client + Job + Skills
                 var entity = db.VwJobsWithClientAndSkills
                                .AsNoTracking()
                                .SingleOrDefault(j => j.JobId == jobId);
@@ -68,7 +66,7 @@ namespace Bridgeway.BLL.EF
                     Description = entity.JobDescription,
                     Status = entity.JobStatus,
                     CreatedAt = entity.CreatedAt,
-                    UpdatedAt = entity.UpdatedAt,   // Mapped as per your latest update
+                    UpdatedAt = entity.UpdatedAt,
                     RequiredSkills = entity.RequiredSkills,
                     ClientName = entity.CompanyName,
                     ClientIndustry = entity.Industry
@@ -94,7 +92,7 @@ namespace Bridgeway.BLL.EF
                     Description = j.JobDescription,
                     Status = j.JobStatus,
                     CreatedAt = j.CreatedAt,
-                    UpdatedAt = j.UpdatedAt,        // Mapped as per your latest update
+                    UpdatedAt = j.UpdatedAt,
                     RequiredSkills = j.RequiredSkills,
                     ClientName = j.CompanyName,
                     ClientIndustry = j.Industry
@@ -106,7 +104,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Query the dashboard view for open jobs with top candidates
                 var data = db.VwOpenJobsWithTopCandidates
                              .AsNoTracking()
                              .ToList();
@@ -127,7 +124,6 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Invoke the existing SP to ensure scoring consistency
                 var pJobId = new SqlParameter("@JobId", jobId);
                 var pTopN = new SqlParameter("@TopN", (object)topN ?? DBNull.Value);
 
@@ -153,7 +149,7 @@ namespace Bridgeway.BLL.EF
                     YearsExperience = c.YearsExperience,
                     VetStatus = c.VetStatus,
                     AvgRating = c.AvgRating,
-                    TotalRatings = c.RatingCount, // Maps DB 'rating_count' to DTO 'TotalRatings'
+                    TotalRatings = c.RatingCount,
                     MatchScore = c.MatchScore,
                     ApplicationStatus = c.ApplicationStatus,
                     Timezone = c.EngineerTimezone,

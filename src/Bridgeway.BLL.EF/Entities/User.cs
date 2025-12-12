@@ -29,7 +29,7 @@ namespace Bridgeway.BLL.EF.Entities
         [Column("role")]
         [Required]
         [StringLength(20)]
-        public string Role { get; set; } // 'engineer','client','admin'
+        public string Role { get; set; } 
 
         [Column("created_at")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

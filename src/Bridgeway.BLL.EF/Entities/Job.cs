@@ -30,7 +30,6 @@ namespace Bridgeway.BLL.EF.Entities
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
 
-        // Navigation property (Optional but recommended)
-        // public virtual ClientProfile Client { get; set; }
+
     }
 }

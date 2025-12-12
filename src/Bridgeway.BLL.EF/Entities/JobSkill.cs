@@ -16,7 +16,7 @@ namespace Bridgeway.BLL.EF.Entities
         [Column("importance_level")]
         [Required]
         [StringLength(20)]
-        public string ImportanceLevel { get; set; } // 'required','preferred'
+        public string ImportanceLevel { get; set; }
 
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
