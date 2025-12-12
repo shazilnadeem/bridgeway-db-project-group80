@@ -1,103 +1,103 @@
 
-# Visual Studio / .NET
+# # Visual Studio / .NET
 
 
-# User-specific files
-*.user
-*.userosscache
-*.suo
-*.sln.docstates
+# # User-specific files
+# *.user
+# *.userosscache
+# *.suo
+# *.sln.docstates
 
-# Build results
-[Dd]ebug/
-[Rr]elease/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
+# # Build results
+# [Dd]ebug/
+# [Rr]elease/
+# x64/
+# x86/
+# [Aa][Rr][Mm]/
+# [Aa][Rr][Mm]64/
+# bld/
+# [Bb]in/
+# [Oo]bj/
+# [Ll]og/
+# [Ll]ogs/
 
-# Visual Studio cache
-.vs/
+# # Visual Studio cache
+# .vs/
 
-# Backup & auto-generated files
-*.tmp
-*.bak
-*.cache
-*.config
-*.svclog
-*.ipr
-*.iws
-*.iml
+# # Backup & auto-generated files
+# *.tmp
+# *.bak
+# *.cache
+# *.config
+# *.svclog
+# *.ipr
+# *.iws
+# *.iml
 
-# NuGet packages
-*.nupkg
-**/packages/*
-!**/packages/build/
-*.snupkg
-project.lock.json
-project.fragment.lock.json
-artifacts/
+# # NuGet packages
+# *.nupkg
+# **/packages/*
+# !**/packages/build/
+# *.snupkg
+# project.lock.json
+# project.fragment.lock.json
+# artifacts/
 
-# MSBuild export files
-*.g.props
-*.g.targets
+# # MSBuild export files
+# *.g.props
+# *.g.targets
 
-# Roslyn
-*.ide/
+# # Roslyn
+# *.ide/
 
-# Entity Framework
-migrations/
+# # Entity Framework
+# migrations/
 
-############################
-# ASP.NET / MVC
-############################
+# ############################
+# # ASP.NET / MVC
+# ############################
 
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
+# # ASP.NET Scaffolding
+# ScaffoldingReadMe.txt
 
-# Publish output
-publish/
-wwwroot/
+# # Publish output
+# publish/
+# wwwroot/
 
-############################
-# OS-specific files
-############################
+# ############################
+# # OS-specific files
+# ############################
 
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+# # Windows
+# Thumbs.db
+# ehthumbs.db
+# Desktop.ini
 
-# macOS
-.DS_Store
+# # macOS
+# .DS_Store
 
-# Linux
-*.swp
-*.swo
+# # Linux
+# *.swp
+# *.swo
 
-############################
-# Node / Frontend (if ever added)
-############################
+# ############################
+# # Node / Frontend (if ever added)
+# ############################
 
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-dist/
-build/
+# node_modules/
+# npm-debug.log
+# yarn-debug.log
+# yarn-error.log
+# dist/
+# build/
 
-############################
-# Logs
-############################
-*.log
+# ############################
+# # Logs
+# ############################
+# *.log
 
-############################
-# Rider / JetBrains
-############################
-.idea/
-*.sln.iml
+# ############################
+# # Rider / JetBrains
+# ############################
+# .idea/
+# *.sln.iml

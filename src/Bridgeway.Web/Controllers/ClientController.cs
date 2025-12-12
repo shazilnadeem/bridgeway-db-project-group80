@@ -11,6 +11,21 @@ namespace Bridgeway.Web.Controllers
 {
     public class ClientController : Controller
     {
+        private void PopulateSkills(CreateJobViewModel model)
+        {
+            using (var db = new BridgewayDbContext())
+            {
+                model.AvailableSkills = db.Skills
+                    .OrderBy(s => s.SkillName)
+                    .Select(s => new SelectListItem
+                    {
+                        Value = s.SkillId.ToString(),
+                        Text = s.SkillName
+                    })
+                    .ToList();
+            }
+        }
+
         // GET: /Client/Dashboard
         public ActionResult Dashboard()
         {
@@ -35,38 +50,20 @@ namespace Bridgeway.Web.Controllers
         // GET: /Client/CreateJob
         public ActionResult CreateJob()
         {
-            // Populate the dropdown list
             var model = new CreateJobViewModel();
-            
-            // We temporarily use EF directly to fetch the skills list for the UI
-            // In a strict architecture, you'd add 'GetSkills()' to a Service, but this works for now.
-            using (var db = new BridgewayDbContext())
-            {
-                model.AvailableSkills = db.Skills
-                    .Select(s => new SelectListItem
-                    {
-                        Value = s.SkillId.ToString(),
-                        Text = s.SkillName
-                    })
-                    .ToList();
-            }
-
+            PopulateSkills(model);
             return View(model);
         }
 
         // POST: /Client/CreateJob
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult CreateJob(CreateJobViewModel model)
         {
-            // If validation fails, we MUST reload the dropdown before returning the view
+            // If invalid, reload skills for re-render
             if (!ModelState.IsValid)
             {
-                using (var db = new BridgewayDbContext())
-                {
-                    model.AvailableSkills = db.Skills
-                        .Select(s => new SelectListItem { Value = s.SkillId.ToString(), Text = s.SkillName })
-                        .ToList();
-                }
+                PopulateSkills(model);
                 return View(model);
             }
 
@@ -75,25 +72,27 @@ namespace Bridgeway.Web.Controllers
             var jobService = ServiceFactory.CreateJobService();
 
             var client = clientService.GetByUserId(userId);
+            if (client == null) return RedirectToAction("Login", "Account");
 
             var dto = new JobCreateDto
             {
                 ClientId = client.ClientId,
                 Title = model.Title,
                 Description = model.Description,
-                
-                // Pass the Selected IDs to the BLL
                 SkillIds = model.SelectedSkillIds ?? new List<int>(),
-                
                 JobType = model.JobType,
                 Budget = model.Budget
             };
 
             var createdJob = jobService.CreateJob(dto);
 
-            // Redirect to Dashboard or Jobs list
-            return RedirectToAction("Dashboard");
+            // Optional: auto-run matching immediately after job is created
+            // (only if your BLL supports it safely)
+            jobService.RunMatching(createdJob.JobId, 10);
+
+            return RedirectToAction("Candidates", new { jobId = createdJob.JobId });
         }
+
 
         // POST: /Client/RunMatching
         [HttpPost]

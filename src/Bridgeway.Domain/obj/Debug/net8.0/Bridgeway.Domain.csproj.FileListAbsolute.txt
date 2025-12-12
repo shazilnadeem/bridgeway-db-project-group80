@@ -1,0 +1,12 @@
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\bin\Debug\net8.0\Bridgeway.Domain.deps.json
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\bin\Debug\net8.0\Bridgeway.Domain.dll
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\bin\Debug\net8.0\Bridgeway.Domain.pdb
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\Bridgeway.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\Bridgeway.Domain.AssemblyInfoInputs.cache
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\Bridgeway.Domain.AssemblyInfo.cs
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\Bridgeway.Domain.csproj.CoreCompileInputs.cache
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\Bridgeway.Domain.sourcelink.json
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\Bridgeway.Domain.dll
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\refint\Bridgeway.Domain.dll
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\Bridgeway.Domain.pdb
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.Domain\obj\Debug\net8.0\ref\Bridgeway.Domain.dll

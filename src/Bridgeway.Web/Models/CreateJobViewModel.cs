@@ -1,20 +1,26 @@
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc.Rendering; // <--- The Correct Namespace for .NET 9
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Bridgeway.Web.Models
 {
     public class CreateJobViewModel
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        
-        // The list of IDs selected by the user
-        public List<int> SelectedSkillIds { get; set; }
+        [Required]
+        public string Title { get; set; } = "";
 
-        // The list of items to populate the dropdown
-        public IEnumerable<SelectListItem> AvailableSkills { get; set; }
+        [Required]
+        public string Description { get; set; } = "";
 
-        public string JobType { get; set; }
+        // Multi-select binds to this on POST
+        public List<int> SelectedSkillIds { get; set; } = new();
+
+        // UI-only (not posted)
+        [BindNever]
+        public IEnumerable<SelectListItem> AvailableSkills { get; set; } = new List<SelectListItem>();
+
+        public string? JobType { get; set; }
         public decimal? Budget { get; set; }
     }
 }

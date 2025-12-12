@@ -1,0 +1,313 @@
+.engineer-profile {
+  position: relative;
+  width: 1728px;
+  height: 1658px;
+  background-color: #0d0e17;
+  overflow: hidden;
+}
+
+.engineer-profile .rectangle-23 {
+  position: absolute;
+  top: 127px;
+  left: 0;
+  width: 1728px;
+  height: 1518px;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 14, 23, 1) 0%,
+    rgba(18, 20, 50, 1) 33%,
+    rgba(8, 9, 33, 1) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.engineer-profile .rectangle-24 {
+  position: absolute;
+  top: 3496px;
+  left: -7114px;
+  width: 444px;
+  height: 230px;
+}
+
+.engineer-profile .rectangle-25 {
+  position: absolute;
+  top: 3496px;
+  left: -7114px;
+  width: 764px;
+  height: 760px;
+}
+
+.engineer-profile .rectangle-26 {
+  position: absolute;
+  top: 183px;
+  left: 145px;
+  width: 1402px;
+  height: 1340px;
+  background-color: #4e505ea6;
+  border-radius: 59px;
+}
+
+.engineer-profile .text-wrapper-44 {
+  position: absolute;
+  top: 238px;
+  left: 276px;
+  width: 532px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: -1.50px;
+  line-height: 84px;
+}
+
+.engineer-profile .text-wrapper-45 {
+  position: absolute;
+  top: 769px;
+  left: 278px;
+  width: 532px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: -1.50px;
+  line-height: 84px;
+}
+
+.engineer-profile .rectangle-27 {
+  position: absolute;
+  top: 380px;
+  left: 278px;
+  width: 541px;
+  height: 69px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #040202;
+}
+
+.engineer-profile .rectangle-28 {
+  position: absolute;
+  top: 379px;
+  left: 953px;
+  width: 541px;
+  height: 69px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #040202;
+}
+
+.engineer-profile .rectangle-29 {
+  position: absolute;
+  top: 611px;
+  left: 276px;
+  width: 541px;
+  height: 69px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #040202;
+}
+
+.engineer-profile .rectangle-30 {
+  position: absolute;
+  top: 495px;
+  left: 278px;
+  width: 541px;
+  height: 69px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #040202;
+}
+
+.engineer-profile .rounded-rectangle {
+  position: absolute;
+  top: 902px;
+  left: 278px;
+  width: 1136px;
+  height: 276px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #040202;
+}
+
+.engineer-profile .rectangle-31 {
+  position: absolute;
+  top: 495px;
+  left: 953px;
+  width: 541px;
+  height: 69px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #040202;
+}
+
+.engineer-profile .text-wrapper-46 {
+  position: absolute;
+  top: 397px;
+  left: 313px;
+  width: 386px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #120f0f9e;
+  font-size: 25px;
+  letter-spacing: -0.62px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.engineer-profile .text-wrapper-47 {
+  position: absolute;
+  top: 512px;
+  left: 985px;
+  width: 386px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #120f0f9e;
+  font-size: 25px;
+  letter-spacing: -0.62px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.engineer-profile .text-wrapper-48 {
+  position: absolute;
+  top: 394px;
+  left: 996px;
+  width: 386px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #120f0f9e;
+  font-size: 25px;
+  letter-spacing: -0.62px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.engineer-profile .text-wrapper-49 {
+  position: absolute;
+  top: 628px;
+  left: 313px;
+  width: 386px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #120f0f9e;
+  font-size: 25px;
+  letter-spacing: -0.62px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.engineer-profile .text-wrapper-50 {
+  position: absolute;
+  top: 937px;
+  left: 349px;
+  width: 386px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #120f0f9e;
+  font-size: 30px;
+  letter-spacing: -0.75px;
+  line-height: 42px;
+  white-space: nowrap;
+}
+
+.engineer-profile .text-wrapper-51 {
+  position: absolute;
+  top: 509px;
+  left: 313px;
+  width: 386px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #120f0f9e;
+  font-size: 25px;
+  letter-spacing: -0.62px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.engineer-profile .rectangle-32 {
+  position: absolute;
+  top: 3496px;
+  left: -7114px;
+  width: 100px;
+  height: 100px;
+}
+
+.engineer-profile .button-linkout-7 {
+  display: flex;
+  width: 200px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 14px 22px;
+  position: absolute;
+  top: 1267px;
+  left: 282px;
+  background-color: #ededed;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.engineer-profile .button-linkout-7:hover {
+  background-color: #d4d4d4;
+}
+
+.engineer-profile .text-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -6.50px;
+  margin-bottom: -4.50px;
+  margin-left: -3.50px;
+  margin-right: -3.50px;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: -0.62px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.engineer-profile .button-back-profile {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 150px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 14px 22px;
+  position: absolute;
+  top: 50px;
+  left: 1350px;
+  background-color: #0d0e17;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.engineer-profile .button-back-profile:hover {
+  background-color: #1a1b2e;
+}
+
+.engineer-profile .text-back-profile {
+  position: relative;
+  width: fit-content;
+  font-family: "DM Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: -0.50px;
+  line-height: 28px;
+  white-space: nowrap;
+}

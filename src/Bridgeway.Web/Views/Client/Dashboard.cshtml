@@ -32,7 +32,7 @@
     <div class="group-5">
         <div class="rectangle-16"></div>
         <div class="text-wrapper-28">Open Jobs</div>
-        <div class="text-wrapper-25">@Model.RecentJobs.Count(j => j.Status == "open")</div>
+        <div class="text-wrapper-25">@Model.RecentJobs.Count(j => (j.Status ?? "").ToLower() == "open")</div>
     </div>
 
     <div class="group">

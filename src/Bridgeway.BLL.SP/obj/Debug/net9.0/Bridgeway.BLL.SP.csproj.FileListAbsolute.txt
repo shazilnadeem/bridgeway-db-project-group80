@@ -1,0 +1,16 @@
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\bin\Debug\net9.0\Bridgeway.BLL.SP.deps.json
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\bin\Debug\net9.0\Bridgeway.BLL.SP.dll
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\bin\Debug\net9.0\Bridgeway.BLL.SP.pdb
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\bin\Debug\net9.0\Bridgeway.Domain.dll
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\bin\Debug\net9.0\Bridgeway.Domain.pdb
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.csproj.AssemblyReference.cache
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.GeneratedMSBuildEditorConfig.editorconfig
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.AssemblyInfoInputs.cache
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.AssemblyInfo.cs
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.csproj.CoreCompileInputs.cache
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.sourcelink.json
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgewa.C408C0AE.Up2Date
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.dll
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\refint\Bridgeway.BLL.SP.dll
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\Bridgeway.BLL.SP.pdb
+E:\LUMS 27'\Junior Year\Fall Semester\CS340 - Databases\PROJECT\src\Bridgeway.BLL.SP\obj\Debug\net9.0\ref\Bridgeway.BLL.SP.dll

@@ -1,31 +1,21 @@
 using System.Data.Entity;
-using Bridgeway.BLL.EF.Entities; // Ensure this is here
+using Bridgeway.BLL.EF.Entities;
 
 namespace Bridgeway.BLL.EF
 {
     public class BridgewayDbContext : DbContext
     {
-        // 1. Add a static property to hold the connection string
         public static string ConnectionString { get; set; }
 
-        // 2. Update the constructor to use it
         public BridgewayDbContext() : base(ConnectionString ?? "name=BridgewayDb")
         {
-            // Disable default initialization to prevent EF from trying to create/migrate the existing DB
             Database.SetInitializer<BridgewayDbContext>(null);
         }
 
         // =========================================================
-        // Table DbSets (Keep the rest of your file exactly as it is below)
-        // =========================================================
-        public virtual DbSet<User> Users { get; set; }
-        // ... (Keep all your DbSets and OnModelCreating the same) ...
-    
-
-        // =========================================================
         // Table DbSets
         // =========================================================
-        // public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<AvailabilityStatus> AvailabilityStatuses { get; set; }
         public virtual DbSet<EngineerProfile> EngineerProfiles { get; set; }
         public virtual DbSet<ClientProfile> ClientProfiles { get; set; }
@@ -40,7 +30,7 @@ namespace Bridgeway.BLL.EF
         public virtual DbSet<EngineerArchive> EngineerArchive { get; set; }
 
         // =========================================================
-        // View DbSets (Read-Only)
+        // View DbSets
         // =========================================================
         public virtual DbSet<VwEngineerFullProfile> VwEngineerFullProfiles { get; set; }
         public virtual DbSet<VwEngineerSearchIndex> VwEngineerSearchIndexes { get; set; }
@@ -52,42 +42,22 @@ namespace Bridgeway.BLL.EF
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            // --- Composite Keys for Bridge Tables ---
-            modelBuilder.Entity<EngineerSkill>()
-                .HasKey(es => new { es.EngineerId, es.SkillId });
+            // --- Composite Keys ---
+            modelBuilder.Entity<EngineerSkill>().HasKey(es => new { es.EngineerId, es.SkillId });
+            modelBuilder.Entity<JobSkill>().HasKey(js => new { js.JobId, js.SkillId });
+            modelBuilder.Entity<JobApplication>().HasKey(ja => new { ja.EngineerId, ja.JobId });
+            modelBuilder.Entity<EndorsementRating>().HasKey(er => new { er.ClientId, er.EngineerId });
 
-            modelBuilder.Entity<JobSkill>()
-                .HasKey(js => new { js.JobId, js.SkillId });
+            // --- Keys for Views ---
+            modelBuilder.Entity<VwEngineerFullProfile>().HasKey(v => v.EngineerId);
+            modelBuilder.Entity<VwEngineerSearchIndex>().HasKey(v => v.EngineerId);
+            modelBuilder.Entity<VwJobWithClientAndSkills>().HasKey(v => v.JobId);
+            modelBuilder.Entity<VwApplicationsSummaryByJob>().HasKey(v => v.JobId);
+            modelBuilder.Entity<VwVettingQueue>().HasKey(v => v.EngineerId);
+            modelBuilder.Entity<VwJobCandidatesRanked>().HasKey(v => new { v.JobId, v.EngineerId });
+            modelBuilder.Entity<VwOpenJobsWithTopCandidate>().HasKey(v => v.JobId);
 
-            modelBuilder.Entity<JobApplication>()
-                .HasKey(ja => new { ja.EngineerId, ja.JobId });
-
-            modelBuilder.Entity<EndorsementRating>()
-                .HasKey(er => new { er.ClientId, er.EngineerId });
-
-            // --- Keys for Views (Required by EF) ---
-            modelBuilder.Entity<VwEngineerFullProfile>()
-                .HasKey(v => v.EngineerId);
-
-            modelBuilder.Entity<VwEngineerSearchIndex>()
-                .HasKey(v => v.EngineerId);
-
-            modelBuilder.Entity<VwJobWithClientAndSkills>()
-                .HasKey(v => v.JobId);
-
-            modelBuilder.Entity<VwApplicationsSummaryByJob>()
-                .HasKey(v => v.JobId);
-
-            modelBuilder.Entity<VwVettingQueue>()
-                .HasKey(v => v.EngineerId);
-
-            modelBuilder.Entity<VwJobCandidatesRanked>()
-                .HasKey(v => new { v.JobId, v.EngineerId });
-
-            modelBuilder.Entity<VwOpenJobsWithTopCandidate>()
-                .HasKey(v => v.JobId);
-
-            // --- Explicit Table Mapping ---
+            // --- Explicit Table Mapping (Standard Tables) ---
             modelBuilder.Entity<User>().ToTable("tbl_User");
             modelBuilder.Entity<AvailabilityStatus>().ToTable("tbl_Availability_Status");
             modelBuilder.Entity<EngineerProfile>().ToTable("tbl_Engineer_Profile");
@@ -101,6 +71,17 @@ namespace Bridgeway.BLL.EF
             modelBuilder.Entity<EndorsementRating>().ToTable("tbl_Endorsement_Ratings");
             modelBuilder.Entity<EngineerRatingCache>().ToTable("tbl_Engineer_RatingCache");
             modelBuilder.Entity<EngineerArchive>().ToTable("tbl_Engineer_Archive");
+
+            // --- FIX START: Explicit View Mapping ---
+            // These lines map the C# classes to your SQL Views (which start with 'vw_')
+            modelBuilder.Entity<VwEngineerFullProfile>().ToTable("vw_EngineerFullProfile");
+            modelBuilder.Entity<VwEngineerSearchIndex>().ToTable("vw_EngineerSearchIndex");
+            modelBuilder.Entity<VwJobWithClientAndSkills>().ToTable("vw_JobWithClientAndSkills");
+            modelBuilder.Entity<VwApplicationsSummaryByJob>().ToTable("vw_ApplicationsSummaryByJob");
+            modelBuilder.Entity<VwVettingQueue>().ToTable("vw_VettingQueue");
+            modelBuilder.Entity<VwJobCandidatesRanked>().ToTable("vw_JobCandidatesRanked");
+            modelBuilder.Entity<VwOpenJobsWithTopCandidate>().ToTable("vw_OpenJobsWithTopCandidate");
+            // --- FIX END ---
 
             base.OnModelCreating(modelBuilder);
         }

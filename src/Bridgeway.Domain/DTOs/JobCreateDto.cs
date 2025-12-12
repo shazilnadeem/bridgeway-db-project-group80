@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Bridgeway.Domain.DTOs
 {
@@ -6,15 +7,14 @@ namespace Bridgeway.Domain.DTOs
     {
         public int ClientId { get; set; }
 
-        public string Title { get; set; }
-        public string Description { get; set; }
+        public string Title { get; set; } = "";
+        public string Description { get; set; } = "";
 
-        // simple CSV of skill IDs or names, depends on UI/BLL choice
-        public List<int> SkillIds { get; set; }
+        public List<int> SkillIds { get; set; } = new();
 
-        public string JobType { get; set; }           // e.g. full-time/contract
+        public string? JobType { get; set; }
         public decimal? Budget { get; set; }
 
-        public string Timezone { get; set; }
+        public string? Timezone { get; set; }
     }
 }
