@@ -1,0 +1,296 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.ConsoleApp\\Bridgeway.ConsoleApp.csproj": {}
+  },
+  "projects": {
+    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj",
+        "projectName": "Bridgeway.BLL.EF",
+        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj",
+        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
+        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
+                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj",
+        "projectName": "Bridgeway.BLL.SP",
+        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj",
+        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
+        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
+                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.ConsoleApp\\Bridgeway.ConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.ConsoleApp\\Bridgeway.ConsoleApp.csproj",
+        "projectName": "Bridgeway.ConsoleApp",
+        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.ConsoleApp\\Bridgeway.ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
+        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.ConsoleApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj": {
+                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.EF\\Bridgeway.BLL.EF.csproj"
+              },
+              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj": {
+                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.BLL.SP\\Bridgeway.BLL.SP.csproj"
+              },
+              "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
+                "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj",
+        "projectName": "Bridgeway.Domain",
+        "projectPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\Bridgeway.Domain.csproj",
+        "packagesPath": "C:\\Users\\Shazil Nadeem\\.nuget\\packages\\",
+        "outputPath": "E:\\LUMS 27'\\Junior Year\\Fall Semester\\CS340 - Databases\\PROJECT\\src\\Bridgeway.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Shazil Nadeem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

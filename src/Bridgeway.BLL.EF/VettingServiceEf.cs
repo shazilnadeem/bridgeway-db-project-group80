@@ -16,7 +16,7 @@ namespace Bridgeway.BLL.EF
             {
                 var query = db.VwVettingQueues
                               .AsNoTracking()
-                              .Where(v => v.CurrentVetStatus == "pending") // Only show pending
+                              .Where(v => v.CurrentVetStatus == "pending") // Filter only pending
                               .OrderBy(v => v.LastReviewDate)
                               .ToList();
 
@@ -37,19 +37,14 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // 1. Fetch the Engineer Profile (We need to update this!)
-                var engineerProfile = db.EngineerProfiles.Find(dto.EngineerId);
-                if (engineerProfile == null)
-                {
-                    throw new KeyNotFoundException($"Engineer {dto.EngineerId} not found in profile table.");
-                }
-
-                // 2. Create the Review Record
+                // --- STEP 1: Insert the Review ---
+                // We save this FIRST so the trigger fires now. 
+                // Even if the trigger calculates a low score and sets 'pending', we don't care yet.
                 var review = new VettingReview
                 {
                     EngineerId = dto.EngineerId,
                     ReviewedBy = dto.ReviewerUserId,
-                    ReviewStatus = dto.Decision,
+                    ReviewStatus = dto.Decision, // "recommended" or "rejected"
                     SkillsVerified = dto.SkillsVerified,
                     ExperienceVerified = dto.ExperienceVerified,
                     PortfolioVerified = dto.PortfolioVerified,
@@ -59,15 +54,23 @@ namespace Bridgeway.BLL.EF
                 };
 
                 db.VettingReviews.Add(review);
+                db.SaveChanges(); // <--- Transaction 1 (Trigger fires here)
 
-                // 3. FORCE UPDATE the Profile Status
-                engineerProfile.VetStatus = dto.Decision; // "approved" or "rejected"
-                
-                // Explicitly tell EF that this entity has changed
-                db.Entry(engineerProfile).State = EntityState.Modified;
-
-                // 4. Save Changes (This wraps both the Insert and the Update in one transaction)
-                db.SaveChanges();
+                // --- STEP 2: Force Update the Profile ---
+                // Now we overwrite whatever the trigger did with the Admin's final decision.
+                var engineerProfile = db.EngineerProfiles.Find(dto.EngineerId);
+                if (engineerProfile != null)
+                {
+                    // Map "recommended" -> "approved" to match DB Constraint
+                    string finalStatus = (dto.Decision == "recommended") ? "approved" : dto.Decision;
+                    
+                    engineerProfile.VetStatus = finalStatus;
+                    
+                    // Explicitly mark as modified
+                    db.Entry(engineerProfile).State = EntityState.Modified;
+                    
+                    db.SaveChanges(); // <--- Transaction 2 (Final Authority)
+                }
             }
         }
     }

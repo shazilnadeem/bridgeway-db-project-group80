@@ -37,7 +37,7 @@ namespace Bridgeway.BLL.SP
 
         public void CreateVettingReview(VettingReviewDto review)
         {
-            // 1. Create the Review Record
+            // 1. Create the Review Record (Keep 'recommended' here for scoring)
             var parameters = new[]
             {
                 new SqlParameter("@EngineerId", review.EngineerId),
@@ -52,14 +52,16 @@ namespace Bridgeway.BLL.SP
 
             SqlHelper.ExecuteNonQuery("sp_CreateVettingReview", parameters);
 
-            // 2. FORCE UPDATE the Engineer Profile Status (The Fix)
+            // 2. FIX: Map 'recommended' -> 'approved' for the Profile Table
+            string profileStatus = (review.Decision == "recommended") ? "approved" : review.Decision;
+
             string updateSql = @"
                 UPDATE tbl_Engineer_Profile 
                 SET vet_status = @NewStatus 
                 WHERE engineer_id = @EngId";
 
             SqlHelper.ExecuteNonQueryText(updateSql, 
-                new SqlParameter("@NewStatus", review.Decision), // 'approved' or 'rejected'
+                new SqlParameter("@NewStatus", profileStatus), // Now sends 'approved' instead of 'recommended'
                 new SqlParameter("@EngId", review.EngineerId)
             );
         }
