@@ -1,36 +1,49 @@
 @model Bridgeway.Web.Models.EngineerDashboardViewModel
 
-<h2>Engineer Dashboard</h2>
+<link rel="stylesheet" href="~/css/home/globals.css" />
+<link rel="stylesheet" href="~/css/home/styleguide.css" />
+<link rel="stylesheet" href="~/css/home/engineer-dashboard.css" />
 
-<p>Welcome, @Model.Engineer.FullName</p>
-<p>Vet status: @Model.Engineer.VetStatus</p>
-<p>Timezone: @Model.Engineer.Timezone</p>
+<div class="engineer-dashboard">
+    <img class="rectangle-62" src="https://c.animaapp.com/mj2k00phPn0OzS/img/rectangle-6.svg" />
+    <img class="rectangle-63" src="https://c.animaapp.com/mj2k00phPn0OzS/img/rectangle-6.svg" />
+    <a href="@Url.Action("Index", "Home")"><div class="text-wrapper-78">BRIDGEWAY</div></a>
+    
+    <div class="rectangle-64"></div>
+    
+    <a href="@Url.Action("Index", "Home")"><button class="button-linkout-20"><div class="text-17">Home</div></button></a>
+    
+    <div class="text-wrapper-79">Welcome, @Model.Engineer.FullName</div>
+    
+    <div class="text-wrapper-80">Total Jobs Applied: @Model.RecentApplications.Count</div>
+    <div class="rectangle-65"></div>
+    
+    <div class="text-wrapper-81">Vetting Status: @Model.Engineer.VetStatus</div>
+    <div class="text-wrapper-84">Avg Rating: @Model.Engineer.AvgRating</div>
+    
+    <div class="text-wrapper-86">Recent Applications</div>
 
-<h3>Recent Applications</h3>
-
-@if (Model.RecentApplications != null && Model.RecentApplications.Count > 0)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Job</th>
-                <th>Status</th>
-                <th>Applied On</th>
-            </tr>
-        </thead>
-        <tbody>
-        @foreach (var app in Model.RecentApplications)
+    <div class="group-12" style="top: 1400px;"> @if (Model.RecentApplications != null && Model.RecentApplications.Count > 0)
         {
-            <tr>
-                <td>@app.JobTitle</td>
-                <td>@app.Status</td>
-                <td>@app.AppliedOn.ToShortDateString()</td>
-            </tr>
+            int offset = 0;
+            foreach (var app in Model.RecentApplications)
+            {
+                <div style="position: absolute; top: @(offset)px; width: 100%;">
+                    <div class="text-wrapper-95" style="text-align:left; left:0;">@app.JobTitle</div>
+                    <div class="text-wrapper-96" style="text-align:left; left:400px;">@app.Status</div>
+                    <div class="text-wrapper-98" style="text-align:left; left:800px;">@app.CreatedAt.ToShortDateString()</div>
+                    <img class="line-2" src="https://c.animaapp.com/mj2k00phPn0OzS/img/line-2.svg" style="top: 80px;" />
+                </div>
+                offset += 100; // Shift next item down
+            }
         }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No applications yet.</p>
-}
+        else
+        {
+            <div class="text-wrapper-95">No applications found.</div>
+        }
+    </div>
+
+    <a href="@Url.Action("Profile", "Engineer")">
+        <img class="profile" src="https://c.animaapp.com/mj2k00phPn0OzS/img/profile.png" />
+    </a>
+</div>

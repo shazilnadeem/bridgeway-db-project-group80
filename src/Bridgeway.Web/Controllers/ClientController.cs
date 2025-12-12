@@ -1,7 +1,11 @@
+using Microsoft.AspNetCore.Mvc;          // Correct for Controller, ActionResult
+using Microsoft.AspNetCore.Mvc.Rendering; // Correct for SelectListItem
 using System.Linq;
-using System.Web.Mvc;
+using System.Collections.Generic;
 using Bridgeway.Web.Services;
 using Bridgeway.Web.Models;
+using Bridgeway.Domain.DTOs;
+using Bridgeway.BLL.EF; // Needed for accessing DbContext directly for skills
 
 namespace Bridgeway.Web.Controllers
 {
@@ -15,34 +19,56 @@ namespace Bridgeway.Web.Controllers
             var jobService = ServiceFactory.CreateJobService();
 
             var client = clientService.GetByUserId(userId);
+            if (client == null) return RedirectToAction("Login", "Account");
+
             var jobs = jobService.GetJobsForClient(client.ClientId);
 
             var model = new ClientDashboardViewModel
             {
                 Client = client,
-                RecentJobs = jobs
-                    .OrderByDescending(j => j.CreatedOn)
-                    .Take(5)
-                    .ToList()
+                RecentJobs = jobs.OrderByDescending(j => j.CreatedAt).Take(5).ToList()
             };
 
             return View(model);
         }
 
         // GET: /Client/CreateJob
-        // Show empty form
         public ActionResult CreateJob()
         {
-            return View(new CreateJobViewModel());
+            // Populate the dropdown list
+            var model = new CreateJobViewModel();
+            
+            // We temporarily use EF directly to fetch the skills list for the UI
+            // In a strict architecture, you'd add 'GetSkills()' to a Service, but this works for now.
+            using (var db = new BridgewayDbContext())
+            {
+                model.AvailableSkills = db.Skills
+                    .Select(s => new SelectListItem
+                    {
+                        Value = s.SkillId.ToString(),
+                        Text = s.SkillName
+                    })
+                    .ToList();
+            }
+
+            return View(model);
         }
 
         // POST: /Client/CreateJob
-        // Handle form submit and create the job
         [HttpPost]
         public ActionResult CreateJob(CreateJobViewModel model)
         {
+            // If validation fails, we MUST reload the dropdown before returning the view
             if (!ModelState.IsValid)
+            {
+                using (var db = new BridgewayDbContext())
+                {
+                    model.AvailableSkills = db.Skills
+                        .Select(s => new SelectListItem { Value = s.SkillId.ToString(), Text = s.SkillName })
+                        .ToList();
+                }
                 return View(model);
+            }
 
             int userId = AuthService.GetCurrentUserId(HttpContext);
             var clientService = ServiceFactory.CreateClientService();
@@ -50,50 +76,35 @@ namespace Bridgeway.Web.Controllers
 
             var client = clientService.GetByUserId(userId);
 
-            var dto = new Bridgeway.Domain.DTOs.JobCreateDto
+            var dto = new JobCreateDto
             {
                 ClientId = client.ClientId,
                 Title = model.Title,
                 Description = model.Description,
-                RequiredSkills = model.RequiredSkills,
+                
+                // Pass the Selected IDs to the BLL
+                SkillIds = model.SelectedSkillIds ?? new List<int>(),
+                
                 JobType = model.JobType,
                 Budget = model.Budget
             };
 
             var createdJob = jobService.CreateJob(dto);
 
-            TempData["Message"] = "Job created with ID " + createdJob.JobId;
-            return RedirectToAction("Jobs");
-        }
-
-        // GET: /Client/Jobs
-        // List all jobs for this client
-        public ActionResult Jobs()
-        {
-            int userId = AuthService.GetCurrentUserId(HttpContext);
-            var clientService = ServiceFactory.CreateClientService();
-            var jobService = ServiceFactory.CreateJobService();
-
-            var client = clientService.GetByUserId(userId);
-            var jobs = jobService.GetJobsForClient(client.ClientId);
-
-            return View(jobs);
+            // Redirect to Dashboard or Jobs list
+            return RedirectToAction("Dashboard");
         }
 
         // POST: /Client/RunMatching
-        // Trigger matching for a job
         [HttpPost]
         public ActionResult RunMatching(int jobId)
         {
             var jobService = ServiceFactory.CreateJobService();
-            jobService.RunMatching(jobId, null); // null => default topN in BLL/SP
-
-            TempData["Message"] = "Matching completed.";
-            return RedirectToAction("Jobs");
+            jobService.RunMatching(jobId, null); 
+            return RedirectToAction("Candidates", new { jobId = jobId });
         }
 
         // GET: /Client/Candidates
-        // Show ranked candidates for a job
         public ActionResult Candidates(int jobId)
         {
             var jobService = ServiceFactory.CreateJobService();

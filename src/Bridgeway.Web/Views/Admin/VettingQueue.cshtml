@@ -1,0 +1,68 @@
+@model IList<Bridgeway.Domain.DTOs.VettingQueueItemDto>
+
+@{
+    ViewData["Title"] = "Vetting Queue";
+    var currentEngineer = Model.FirstOrDefault(); // Show the first person in line
+}
+
+<link rel="stylesheet" href="~/css/admin/globals.css" />
+<link rel="stylesheet" href="~/css/admin/styleguide.css" />
+<link rel="stylesheet" href="~/css/admin/engineerv-vetting.css" />
+
+<div class="engineerv-vetting">
+    <div class="rectangle-29"></div>
+    <div class="text-wrapper-57">BRIDGEWAY</div>
+    <img class="road-bridge-2" src="https://c.animaapp.com/mj2l5h4dIPjppU/img/road-bridge-1.png" />
+
+    <a href="@Url.Action("Dashboard", "Admin")">
+        <button class="button"><div class="text-6">Home</div></button>
+    </a>
+
+    @if (currentEngineer != null)
+    {
+        <div class="name-status-update">@currentEngineer.EngineerName Status Update</div>
+        
+        <div class="rectangle-32"></div>
+        <div class="text-wrapper-37">Vetting Review</div>
+
+        <div class="group-6">
+            <div class="rectangle-34"></div> <div class="text-wrapper-39" style="top: 55px; left: 15px; color: black;">@currentEngineer.EngineerName</div>
+            <div class="text-wrapper-38">Full Name</div>
+
+            <div class="rectangle-35"></div> <div class="text-wrapper-40" style="top: 55px; left: 690px; color: black;">@currentEngineer.Email</div>
+            <div class="text-wrapper-46">Email</div>
+
+            <div class="rectangle-40"></div>
+            <div class="text-wrapper-51">Current Status: @currentEngineer.CurrentStatus</div>
+        </div>
+
+        <div class="text-wrapper-58">Status Decision</div>
+        
+        <form method="post" action="@Url.Action("SubmitVettingReview", "Admin")">
+            <input type="hidden" name="EngineerId" value="@currentEngineer.EngineerId" />
+            <input type="hidden" name="Decision" value="approved" />
+            <input type="hidden" name="Comment" value="Approved via Dashboard" />
+            
+            <button type="submit" class="button-linkout-4" id="approveButton">
+                <div class="text-4">Approve Engineer</div>
+            </button>
+        </form>
+
+        <form method="post" action="@Url.Action("SubmitVettingReview", "Admin")">
+            <input type="hidden" name="EngineerId" value="@currentEngineer.EngineerId" />
+            <input type="hidden" name="Decision" value="rejected" />
+            <input type="hidden" name="Comment" value="Rejected via Dashboard" />
+
+            <button type="submit" class="button-linkout-5" id="rejectButton">
+                <div class="text-5">Reject Engineer</div>
+            </button>
+        </form>
+    }
+    else
+    {
+        <div class="name-status-update">Queue is Empty</div>
+        <div class="text-wrapper-37">No engineers pending vetting.</div>
+    }
+</div>
+
+<script src="~/js/admin/vetting.js"></script>

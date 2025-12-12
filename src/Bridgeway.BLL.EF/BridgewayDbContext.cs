@@ -1,19 +1,31 @@
 using System.Data.Entity;
+using Bridgeway.BLL.EF.Entities; // Ensure this is here
 
 namespace Bridgeway.BLL.EF
 {
     public class BridgewayDbContext : DbContext
     {
-        public BridgewayDbContext() : base("name=BridgewayDb")
+        // 1. Add a static property to hold the connection string
+        public static string ConnectionString { get; set; }
+
+        // 2. Update the constructor to use it
+        public BridgewayDbContext() : base(ConnectionString ?? "name=BridgewayDb")
         {
             // Disable default initialization to prevent EF from trying to create/migrate the existing DB
             Database.SetInitializer<BridgewayDbContext>(null);
         }
 
         // =========================================================
-        // Table DbSets
+        // Table DbSets (Keep the rest of your file exactly as it is below)
         // =========================================================
         public virtual DbSet<User> Users { get; set; }
+        // ... (Keep all your DbSets and OnModelCreating the same) ...
+    
+
+        // =========================================================
+        // Table DbSets
+        // =========================================================
+        // public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<AvailabilityStatus> AvailabilityStatuses { get; set; }
         public virtual DbSet<EngineerProfile> EngineerProfiles { get; set; }
         public virtual DbSet<ClientProfile> ClientProfiles { get; set; }

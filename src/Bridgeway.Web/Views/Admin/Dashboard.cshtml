@@ -1,0 +1,91 @@
+@model Bridgeway.Web.Models.AdminDashboardViewModel
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    bool isEf = Model.CurrentMode == "Ef";
+}
+
+<link rel="stylesheet" href="~/css/admin/globals.css" />
+<link rel="stylesheet" href="~/css/admin/styleguide.css" />
+<link rel="stylesheet" href="~/css/admin/style.css" />
+
+<div class="admin-dashboard">
+    <img class="rectangle" src="https://c.animaapp.com/mj2l5h4dIPjppU/img/rectangle-39.svg" />
+    <img class="img" src="https://c.animaapp.com/mj2l5h4dIPjppU/img/rectangle-6.svg" />
+    <div class="text-wrapper">BRIDGEWAY</div>
+    <div class="div"></div>
+    
+    <a href="@Url.Action("Index", "Home")">
+        <button class="button-linkout"><div class="text">Home</div></button>
+    </a>
+
+    <div class="text-wrapper-2">Admin Dashboard</div>
+    
+    <div class="text-wrapper-3">Current Mode: @Model.CurrentMode</div>
+    
+    <img class="rectangle-2" />
+    <img class="road-bridge" src="https://c.animaapp.com/mj2l5h4dIPjppU/img/road-bridge-1.png" />
+    <a href="#"><img class="profile" src="https://c.animaapp.com/mj2l5h4dIPjppU/img/profile.png" /></a>
+
+    <div class="group">
+        <div class="text-wrapper-4">Recent Vetting activity</div>
+        <p class="p">Which mode to run today?</p>
+        <div class="text-wrapper-5">Engineer Name</div>
+        <div class="text-wrapper-6">Action</div>
+        <div class="text-wrapper-7">Status Change</div>
+        <div class="text-wrapper-8">Score</div>
+        <div class="text-wrapper-9">Last Review</div>
+        <img class="line" src="https://c.animaapp.com/mj2l5h4dIPjppU/img/line-2.svg" />
+    </div>
+
+    <div class="rectangle-3"></div>
+    <div class="text-wrapper-10">Sarah Jenkins</div>
+    <div class="text-wrapper-11">Pending → Approved</div>
+    <div class="text-wrapper-12">85</div>
+    <div class="text-wrapper-13">Oct 24</div>
+    <a href="@Url.Action("VettingQueue", "Admin")" class="action-link"><div class="text-wrapper-22">View</div></a>
+
+    <div class="group-2">
+        <div class="rectangle-18"></div>
+        <div class="text-wrapper-25">Total Clients</div>
+        <div class="text-wrapper-26">150</div> </div>
+
+    <div class="group-3">
+        <div class="rectangle-19"></div>
+        <div class="text-wrapper-27">Total Engineers</div>
+        <div class="text-wrapper-28">@Model.TotalEngineers</div>
+    </div>
+
+    <div class="group-4">
+        <div class="rectangle-19"></div>
+        <div class="text-wrapper-29">Open Jobs</div>
+        <div class="text-wrapper-30">@Model.OpenJobs</div>
+    </div>
+
+    <a href="@Url.Action("VettingQueue", "Admin")">
+        <div class="group-5">
+            <div class="rectangle-18"></div>
+            <div class="text-wrapper-31">Pending Vetting</div>
+            <div class="text-wrapper-28" style="color: #ff6b6b;">@Model.PendingVetting</div>
+        </div>
+    </a>
+
+    <form action="@Url.Action("ChangeBackendMode", "Admin")" method="post">
+        <input type="hidden" name="mode" value="Ef" />
+        <button type="submit" class="button-linkout-2" id="efButton"
+                style="border:none; cursor:pointer; background-color: @(isEf ? "#4a90e2" : "#ededed"); color: @(isEf ? "white" : "black");">
+            <div class="text-2" style="color: inherit;">EF</div>
+        </button>
+    </form>
+
+    <form action="@Url.Action("ChangeBackendMode", "Admin")" method="post">
+        <input type="hidden" name="mode" value="Sp" />
+        <button type="submit" class="button-linkout-3" id="spButton"
+                style="border:none; cursor:pointer; background-color: @(!isEf ? "#4a90e2" : "#ededed"); color: @(!isEf ? "white" : "black");">
+            <div class="text-3" style="color: inherit;">SP</div>
+        </button>
+    </form>
+
+</div>
+
+<script src="~/js/admin/script.js"></script>

@@ -1,4 +1,4 @@
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Bridgeway.Web.Services;
 using Bridgeway.Web.Models;
 // using Bridgeway.Domain.Interfaces;  // only if you need interface types later
@@ -13,26 +13,25 @@ namespace Bridgeway.Web.Controllers
         // GET: /Admin/Dashboard
         public ActionResult Dashboard()
         {
-            // These services will be useful once EF/SP guys expose methods:
-            var analyticsService = ServiceFactory.CreateAnalyticsService();
+            // 1. Initialize Services
             var vettingService = ServiceFactory.CreateVettingService();
-            var engineerService = ServiceFactory.CreateEngineerService();
+            var jobService = ServiceFactory.CreateJobService();
+            // Note: We don't have a simple "GetTotalEngineers" method yet, so we'll leave that as 0 for now
+            // or you can add a method to IEngineerService to fetching the count.
 
-            // TODO: when available, call:
-            // var counters = analyticsService.GetBasicCounters();
-            // var queue = vettingService.GetVettingQueue();
-            // var approvedEngineers = engineerService
-            //     .SearchEngineers(new EngineerSearchFilter { VetStatus = "approved" });
+            // 2. Fetch Real Data
+            var pendingVettingCount = vettingService.GetVettingQueue().Count;
+            var openJobsCount = jobService.GetOpenJobs().Count;
 
+            // 3. Pass Data to Model
             var model = new AdminDashboardViewModel
             {
-                // "Ef" or "StoredProcedure" depending on current mode
                 CurrentMode = ServiceFactory.CurrentMode.ToString(),
-
-                // For now, use placeholders. Later you can replace with real values.
-                TotalEngineers = 0,
-                PendingVetting = 0,
-                OpenJobs = 0
+                
+                TotalEngineers = 0, // Placeholder: You need to add GetTotalCount() to IEngineerService to fix this
+                
+                PendingVetting = pendingVettingCount, // REAL DATA
+                OpenJobs = openJobsCount              // REAL DATA
             };
 
             return View(model);
@@ -61,8 +60,8 @@ namespace Bridgeway.Web.Controllers
             {
                 EngineerId = EngineerId,
                 Decision = Decision,
-                Comment = Comment,
-                ReviewedByUserId = adminUserId
+                ReviewNotes = Comment,       // Changed from Comment = Comment
+                ReviewerUserId = adminUserId // Changed from ReviewedByUserId = adminUserId
             };
 
             vettingService.CreateVettingReview(dto);

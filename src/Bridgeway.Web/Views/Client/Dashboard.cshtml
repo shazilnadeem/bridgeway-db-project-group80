@@ -1,35 +1,86 @@
-@model Bridgeway.Web.Models.ClientDashboardViewModel        // expects clientdashboardviewmodel as its model
+@model Bridgeway.Web.Models.ClientDashboardViewModel
 
+@{
+    ViewData["Title"] = "Client Dashboard";
+}
 
-<h2>Client Dashboard</h2>
+<link rel="stylesheet" href="~/css/client/globals.css" />
+<link rel="stylesheet" href="~/css/client/styleguide.css" />
+<link rel="stylesheet" href="~/css/client/style.css" />
 
-<p>Welcome, @Model.Client.CompanyName</p>
+<div class="client-dashboard">
+    <img class="rectangle" src="https://c.animaapp.com/mj2ksqd0VadNCR/img/rectangle-39.svg" />
+    <img class="img" src="https://c.animaapp.com/mj2ksqd0VadNCR/img/rectangle-6.svg" />
+    <div class="text-wrapper">BRIDGEWAY</div>
+    <div class="div"></div>
+    
+    <a href="@Url.Action("Index", "Home")">
+        <button class="button-linkout"><div class="text">Home</div></button>
+    </a>
 
-<h3>Recent Jobs</h3>
+    <div class="WELCOME-BACK">WELCOME BACK, @Model.Client.ContactName</div>
+    
+    <div class="text-wrapper-2">Your Current Status</div>
+    <p class="p">View top 3 recommendations for your latest job</p>
+    
+    <div class="group-3">
+        <div class="rectangle-17"></div>
+        <div class="text-wrapper-24">Total Jobs Posted</div>
+        <div class="text-wrapper-25">@Model.RecentJobs.Count</div>
+    </div>
+    
+    <div class="group-5">
+        <div class="rectangle-16"></div>
+        <div class="text-wrapper-28">Open Jobs</div>
+        <div class="text-wrapper-25">@Model.RecentJobs.Count(j => j.Status == "open")</div>
+    </div>
 
-@if (Model.RecentJobs != null && Model.RecentJobs.Count > 0)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Status</th>
-                <th>Created On</th>
-            </tr>
-        </thead>
-        <tbody>
-        @foreach (var job in Model.RecentJobs)
+    <div class="group">
+        <div class="recent-jobs-posted">Recent Jobs posted</div>
+        <div class="text-wrapper-4">Job Title</div>
+        <div class="text-wrapper-5">Status</div>
+        <div class="text-wrapper-7">Created</div>
+        <img class="line" src="https://c.animaapp.com/mj2ksqd0VadNCR/img/line-2.svg" />
+    </div>
+
+    @if (Model.RecentJobs != null && Model.RecentJobs.Count > 0)
+    {
+        int offset = 0;
+        foreach (var job in Model.RecentJobs)
         {
-            <tr>
-                <td>@job.Title</td>
-                <td>@job.Status</td>
-                <td>@job.CreatedOn.ToShortDateString()</td>
-            </tr>
+            <div style="position: absolute; top: @(350 + offset)px; left: 0; width: 100%;">
+                
+                <div class="rectangle-4" style="top: 0; left: 106px; width: 1400px; height: 70px; background-color: #4e505ea6; border-radius: 10px;"></div>
+                
+                <div class="text-wrapper-10" style="top: 15px; left: 150px; font-size: 30px; width:auto;">@job.Title</div>
+                
+                <div class="text-wrapper-11" style="top: 15px; left: 500px; font-size: 30px; color: #4a90e2;">@job.Status</div>
+                
+                <div class="text-wrapper-13" style="top: 15px; left: 1250px; font-size: 30px;">@job.CreatedAt.ToShortDateString()</div>
+                
+            </div>
+            offset += 90; // Shift the next row down
         }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No jobs yet.</p>
-}
+    }
+    else
+    {
+        <div class="text-wrapper-10" style="top: 400px; left: 150px;">No jobs posted yet.</div>
+    }
+
+    <a href="@Url.Action("CreateJob", "Client")">
+        <div class="button-linkout-3"><div class="text-2">Post a new job</div></div>
+    </a>
+    
+    @if (Model.RecentJobs.Any())
+    {
+        <a href="@Url.Action("Candidates", "Client", new { jobId = Model.RecentJobs.First().JobId })">
+            <div class="button-linkout-2"><div class="text-2">Top Recommendations</div></div>
+        </a>
+    }
+    else 
+    {
+         <div class="button-linkout-2" style="opacity:0.5; cursor:not-allowed;"><div class="text-2">Top Recommendations</div></div>
+    }
+
+    <a href="#"><img class="profile" src="https://c.animaapp.com/mj2ksqd0VadNCR/img/profile-1.png" /></a>
+</div>

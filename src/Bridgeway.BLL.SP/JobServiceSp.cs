@@ -152,7 +152,7 @@ namespace Bridgeway.BLL.SP
                         YearsExperience   = Convert.ToInt32(reader["years_experience"]),
                         VetStatus         = reader["vet_status"].ToString(),
                         AvgRating         = reader["avg_rating"] == DBNull.Value ? 0 : Convert.ToDecimal(reader["avg_rating"]),
-                        RatingCount       = reader["rating_count"] == DBNull.Value ? 0 : Convert.ToInt32(reader["rating_count"]),
+                        TotalRatings       = reader["rating_count"] == DBNull.Value ? 0 : Convert.ToInt32(reader["rating_count"]),
                         PortfolioLink     = reader["portfolio_link"]?.ToString(),
                         MatchScore        = reader["match_score"] == DBNull.Value ? 0 : Convert.ToDecimal(reader["match_score"]),
                         ApplicationStatus = reader["application_status"]?.ToString(),

@@ -1,0 +1,37 @@
+@model Bridgeway.Web.Models.CreateJobViewModel
+
+<link rel="stylesheet" href="~/css/client/globals.css" />
+<link rel="stylesheet" href="~/css/client/styleguide.css" />
+<link rel="stylesheet" href="~/css/client/post-a-job.css" />
+
+<div class="post-a-job">
+    <div class="rectangle-42"></div>
+    <div class="rectangle-45"></div>
+    <div class="text-wrapper-41">Post a Job</div>
+
+    <a href="@Url.Action("Dashboard", "Client")">
+        <button class="button-linkout-6"><div class="text-6">Home</div></button>
+    </a>
+
+    <form method="post" action="@Url.Action("CreateJob", "Client")">
+        @Html.AntiForgeryToken()
+
+        <input type="text" name="Title" class="rectangle-46" required style="padding:15px; font-size:20px;" />
+        <div class="text-wrapper-42" style="pointer-events:none;">Job Title</div>
+
+        <textarea name="Description" class="rounded-rectangle" required style="padding:15px; font-size:20px; resize:none;"></textarea>
+        <div class="text-wrapper-44" style="pointer-events:none;">Job Description</div>
+
+        <input type="text" name="RequiredSkills" class="rectangle-48" required style="padding:15px; font-size:20px;" />
+        <div class="text-wrapper-43" style="pointer-events:none;">Preferred skills (comma separated)</div>
+
+        <div class="rectangle-49"></div>
+        <div class="text-wrapper-46" style="pointer-events:none;">Status: Open</div>
+
+        <button type="submit" class="button-linkout-5" style="border:none;">
+            <div class="text-5">Create Job</div>
+        </button>
+    </form>
+</div>
+
+<script src="~/js/client/post-a-job.js"></script>

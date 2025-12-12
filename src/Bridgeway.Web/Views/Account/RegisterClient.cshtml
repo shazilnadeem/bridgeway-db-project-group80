@@ -1,0 +1,77 @@
+@model Bridgeway.Web.Models.RegisterClientViewModel
+
+@{
+    ViewData["Title"] = "Register Client";
+}
+
+<link rel="stylesheet" href="~/css/home/globals.css" />
+<link rel="stylesheet" href="~/css/home/styleguide.css" />
+<link rel="stylesheet" href="~/css/home/client-register.css" />
+
+<div class="client-register">
+    <a href="@Url.Action("Index", "Home")">
+        <button class="button-linkout-home"><div class="text-9">Home</div></button>
+    </a>
+    <a href="@Url.Action("Login", "Account")">
+        <button class="button-linkout-12"><div class="text-9">Login</div></button>
+    </a>
+    <a href="@Url.Action("Index", "Home")">
+        <div class="text-wrapper-58">BRIDGEWAY</div>
+    </a>
+
+    <div class="rectangle-40"></div>
+    <img class="rectangle-41" />
+    <a href="@Url.Action("Index", "Home")">
+        <img class="road-bridge-4" src="https://c.animaapp.com/mj2k00phPn0OzS/img/road-bridge-5.png" />
+    </a>
+    <img class="rectangle-42" />
+    
+    <div class="rectangle-43"></div>
+    
+    <a href="@Url.Action("Login", "Account")">
+        <div class="button-linkout-13"><div class="text-10">Login</div></div>
+    </a>
+    <a href="@Url.Action("RegisterEngineer", "Account")">
+        <div class="button-linkout-14"><div class="text-11">Register</div></div>
+    </a>
+
+    <p class="text-wrapper-59">Get Started as a Client</p>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div style="position: absolute; top: 450px; left: 573px; color: #ff6b6b; font-family: 'DM Sans'; font-weight: 700; z-index: 999;">
+            @Html.ValidationSummary(true)
+        </div>
+    }
+
+    <form method="post" action="@Url.Action("RegisterClient", "Account")">
+        @Html.AntiForgeryToken()
+
+        <input type="text" name="ContactName" class="rectangle-44" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-60" style="pointer-events: none;">Contact Name</div>
+
+        <input type="text" name="CompanyName" class="rectangle-49" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-61" style="pointer-events: none;">Company Name</div>
+
+        <input type="email" name="Email" class="rectangle-45" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-62" style="pointer-events: none;">Email</div>
+
+        <input type="password" name="Password" class="rectangle-46" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-63" style="pointer-events: none;">Password</div>
+
+        <input type="password" name="ConfirmPassword" class="rectangle-47" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-64" style="pointer-events: none;">Confirm Password</div>
+
+        <div class="rectangle-48" style="background-color: #999; cursor: not-allowed;"></div>
+        <div class="text-wrapper-65" style="color: #666;">Industry (Optional)</div>
+
+        <button type="submit" class="button-linkout-15" style="border: none;">
+            <div class="text-12">Sign up</div>
+        </button>
+    </form>
+
+    <div class="text-wrapper-66">Already have an account?</div>
+    <p class="text-wrapper-67">Or Register as an Engineer</p>
+    
+    <img class="rectangle-50" />
+</div>

@@ -15,7 +15,7 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Create the core Job entity
+                // 1. Create the Job
                 var job = new Job
                 {
                     ClientId = dto.ClientId,
@@ -26,9 +26,25 @@ namespace Bridgeway.BLL.EF
                 };
 
                 db.Jobs.Add(job);
-                db.SaveChanges(); // Save to generate JobId
+                db.SaveChanges(); // Generates the JobId
 
-                // Return the complete job DTO via the view
+                // 2. Insert Skills into tbl_Job_Skills (The "Normalization" Step)
+                if (dto.SkillIds != null && dto.SkillIds.Count > 0)
+                {
+                    foreach (var skillId in dto.SkillIds)
+                    {
+                        var jobSkill = new JobSkill
+                        {
+                            JobId = job.JobId,
+                            SkillId = skillId,
+                            ImportanceLevel = "required", // Default
+                            CreatedAt = DateTime.UtcNow
+                        };
+                        db.JobSkills.Add(jobSkill);
+                    }
+                    db.SaveChanges();
+                }
+
                 return GetJob(job.JobId);
             }
         }

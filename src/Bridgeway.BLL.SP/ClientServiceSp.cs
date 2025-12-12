@@ -41,8 +41,12 @@ namespace Bridgeway.BLL.SP
         // 3. REQUIRED BY INTERFACE: RegisterClient
         public void RegisterClient(int userId)
         {
-            // Stub: Add INSERT logic here if needed for tests
-            Console.WriteLine("RegisterClient called (Stub)");
+            // We insert with a default company name because the column is NOT NULL in the DB.
+            string sql = @"
+                INSERT INTO tbl_Client_Profile (client_id, company_name, industry, created_at)
+                VALUES (@ClientId, 'Pending Setup', NULL, SYSDATETIME())";
+
+            SqlHelper.ExecuteNonQueryText(sql, new SqlParameter("@ClientId", userId));
         }
 
         // 4. REQUIRED BY INTERFACE: GetClientJobs

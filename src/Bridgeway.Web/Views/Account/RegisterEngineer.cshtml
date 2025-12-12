@@ -1,0 +1,77 @@
+@model Bridgeway.Web.Models.RegisterEngineerViewModel
+
+@{
+    ViewData["Title"] = "Register Engineer";
+}
+
+<link rel="stylesheet" href="~/css/home/globals.css" />
+<link rel="stylesheet" href="~/css/home/styleguide.css" />
+<link rel="stylesheet" href="~/css/home/engineer-register.css" />
+
+<div class="engineer-register">
+    <a href="@Url.Action("Index", "Home")">
+        <button class="button-linkout-home-eng"><div class="text-13">Home</div></button>
+    </a>
+    <a href="@Url.Action("Login", "Account")">
+        <button class="button-linkout-16"><div class="text-13">Login</div></button>
+    </a>
+    <a href="@Url.Action("Index", "Home")">
+        <div class="text-wrapper-68">BRIDGEWAY</div>
+    </a>
+
+    <div class="rectangle-51"></div>
+    <img class="rectangle-52" />
+    <a href="@Url.Action("Index", "Home")">
+        <img class="road-bridge-5" src="https://c.animaapp.com/mj2k00phPn0OzS/img/road-bridge-5.png" />
+    </a>
+    <img class="rectangle-53" />
+    
+    <div class="rectangle-54"></div>
+
+    <p class="text-wrapper-69">Or Register as a Client</p>
+    
+    <a href="@Url.Action("RegisterClient", "Account")">
+        <div class="button-linkout-17"><div class="text-14">Register</div></div>
+    </a>
+    <a href="@Url.Action("Login", "Account")">
+        <div class="button-linkout-18"><div class="text-15">Login</div></div>
+    </a>
+
+    <p class="text-wrapper-70">Get Started as a Engineer</p>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div style="position: absolute; top: 450px; left: 276px; color: #ff6b6b; font-family: 'DM Sans'; font-weight: 700; z-index: 999;">
+            @Html.ValidationSummary(true)
+        </div>
+    }
+
+    <form method="post" action="@Url.Action("RegisterEngineer", "Account")">
+        @Html.AntiForgeryToken()
+
+        <input type="text" name="FullName" class="rectangle-55" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-71" style="pointer-events: none;">Full Name</div>
+
+        <input type="text" name="Timezone" class="rectangle-60" placeholder="e.g. UTC-5" style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-72" style="pointer-events: none;">Timezone</div>
+
+        <input type="email" name="Email" class="rectangle-56" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-73" style="pointer-events: none;">Email</div>
+
+        <input type="number" name="YearsExperience" class="rectangle-58" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-75" style="pointer-events: none;">Years of Experience</div>
+
+        <input type="password" name="Password" class="rectangle-57" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-74" style="pointer-events: none;">Password</div>
+
+        <input type="password" name="ConfirmPassword" class="rectangle-59" required style="padding-left: 15px; font-size: 20px;" />
+        <div class="text-wrapper-76" style="pointer-events: none;">Confirm Password</div>
+
+        <button type="submit" class="button-linkout-19" style="border: none;">
+            <div class="text-16">Sign up</div>
+        </button>
+    </form>
+
+    <div class="text-wrapper-77">Already have an account?</div>
+    <img class="rectangle-61" />
+</div>

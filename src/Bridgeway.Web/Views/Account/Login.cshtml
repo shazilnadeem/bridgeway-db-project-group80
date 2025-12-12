@@ -1,0 +1,80 @@
+@model Bridgeway.Web.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<link rel="stylesheet" href="~/css/home/globals.css" />
+<link rel="stylesheet" href="~/css/home/styleguide.css" />
+<link rel="stylesheet" href="~/css/home/login.css" />
+
+<div class="login">
+    <a href="@Url.Action("Index", "Home")">
+        <button class="button-linkout-home-login"><div class="text-7">Home</div></button>
+    </a>
+    
+    <a href="@Url.Action("Login", "Account")">
+        <button class="button-linkout-8"><div class="text-7">Login</div></button>
+    </a>
+
+    <a href="@Url.Action("Index", "Home")">
+        <div class="text-wrapper-52">BRIDGEWAY</div>
+    </a>
+
+    <div class="rectangle-33"></div>
+    <img class="rectangle-34" />
+    
+    <a href="@Url.Action("Index", "Home")">
+        <img class="road-bridge-3" src="https://c.animaapp.com/mj2k00phPn0OzS/img/road-bridge-5.png" />
+    </a>
+    
+    <img class="rectangle-35" />
+    
+    <div class="rectangle-36"></div>
+    <div class="text-wrapper-53">Please enter your details</div>
+    <div class="text-wrapper-54">WELCOME BACK</div>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div style="position: absolute; top: 580px; left: 573px; color: #ff6b6b; font-family: 'DM Sans'; font-weight: 700; z-index: 999;">
+            @Html.ValidationSummary(true)
+        </div>
+    }
+
+    <form method="post" action="@Url.Action("Login", "Account")">
+        @Html.AntiForgeryToken()
+
+        <input type="email" 
+               name="Email" 
+               class="rectangle-37" 
+               placeholder="" 
+               required 
+               style="padding-left: 20px; font-size: 20px; color: black;" />
+        <div class="text-wrapper-55" style="pointer-events: none;">Email Address</div>
+
+        <input type="password" 
+               name="Password" 
+               class="rectangle-38" 
+               placeholder="" 
+               required 
+               style="padding-left: 20px; font-size: 20px; color: black;" />
+        <div class="text-wrapper-56" style="pointer-events: none;">Password</div>
+
+        <div class="forgot-password">Forgot password</div>
+
+        <button type="submit" class="button-linkout-9" style="border: none;">
+            <div class="text-7">Login</div>
+        </button>
+    </form>
+
+    <a href="@Url.Action("RegisterEngineer", "Account")">
+        <div class="button-linkout-10"><div class="text-8">Register as an ENGINEER</div></div>
+    </a>
+    
+    <a href="@Url.Action("RegisterClient", "Account")">
+        <div class="button-linkout-11"><div class="text-7">Register as a CLIENT</div></div>
+    </a>
+
+    <p class="text-wrapper-57">Do not have an account?</p>
+    <img class="rectangle-39" />
+</div>

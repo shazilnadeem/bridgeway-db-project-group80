@@ -31,6 +31,13 @@ namespace Bridgeway.BLL.EF.Entities
         [StringLength(255)]
         public string PortfolioLink { get; set; }
 
+        // --- ADDED THESE TWO PROPERTIES ---
+        [Column("created_at")]
+        public DateTime CreatedAt { get; set; }
+
+        [Column("updated_at")]
+        public DateTime? UpdatedAt { get; set; }
+
         // Navigation Property
         public virtual User User { get; set; }
     }

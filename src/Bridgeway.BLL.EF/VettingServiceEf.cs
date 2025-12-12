@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity; // Required for EntityState
 using Bridgeway.BLL.EF.Entities;
 using Bridgeway.Domain.DTOs;
 using Bridgeway.Domain.Interfaces;
@@ -13,10 +14,9 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Query the Vetting Queue View
-                // Ordered by 'LastReviewDate' ascending to show oldest pending items first
                 var query = db.VwVettingQueues
                               .AsNoTracking()
+                              .Where(v => v.CurrentVetStatus == "pending") // Only show pending
                               .OrderBy(v => v.LastReviewDate)
                               .ToList();
 
@@ -26,7 +26,7 @@ namespace Bridgeway.BLL.EF
                     EngineerName = v.EngineerName,
                     Email = v.Email,
                     CurrentStatus = v.CurrentVetStatus,
-                    VettingScore = v.VettingScore ?? 0, // Handle potential nulls from DB
+                    VettingScore = v.VettingScore ?? 0,
                     NumReviews = v.NumReviews,
                     PriorityLevel = v.PriorityLevel
                 }).ToList();
@@ -37,33 +37,36 @@ namespace Bridgeway.BLL.EF
         {
             using (var db = new BridgewayDbContext())
             {
-                // Validate constraints (optional but recommended)
-                if (!db.EngineerProfiles.Any(e => e.EngineerId == dto.EngineerId))
+                // 1. Fetch the Engineer Profile (We need to update this!)
+                var engineerProfile = db.EngineerProfiles.Find(dto.EngineerId);
+                if (engineerProfile == null)
                 {
-                    throw new KeyNotFoundException("Engineer not found.");
+                    throw new KeyNotFoundException($"Engineer {dto.EngineerId} not found in profile table.");
                 }
 
+                // 2. Create the Review Record
                 var review = new VettingReview
                 {
                     EngineerId = dto.EngineerId,
                     ReviewedBy = dto.ReviewerUserId,
-                    ReviewStatus = dto.Decision, // "recommended", "not_recommended", etc.
-                    
+                    ReviewStatus = dto.Decision,
                     SkillsVerified = dto.SkillsVerified,
                     ExperienceVerified = dto.ExperienceVerified,
                     PortfolioVerified = dto.PortfolioVerified,
-                    
                     ReviewNotes = dto.ReviewNotes,
                     RejectionReason = dto.RejectionReason,
-                    
                     SubmittedAt = DateTime.UtcNow
                 };
 
                 db.VettingReviews.Add(review);
+
+                // 3. FORCE UPDATE the Profile Status
+                engineerProfile.VetStatus = dto.Decision; // "approved" or "rejected"
                 
-                // Saving changes will fire the DB Trigger 'trg_VettingReviews_AfterInsert'
-                // which automatically executes 'sp_FinaliseVettingDecision' to update 
-                // the engineer's profile status.
+                // Explicitly tell EF that this entity has changed
+                db.Entry(engineerProfile).State = EntityState.Modified;
+
+                // 4. Save Changes (This wraps both the Insert and the Update in one transaction)
                 db.SaveChanges();
             }
         }

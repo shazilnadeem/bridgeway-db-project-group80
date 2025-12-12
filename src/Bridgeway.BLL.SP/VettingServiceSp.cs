@@ -9,14 +9,12 @@ namespace Bridgeway.BLL.SP
 {
     public class VettingServiceSp : IVettingService
     {
-        // ------------------------------------------------------------
-        // 1. Get Vetting Queue (vw_VettingQueue)
-        // ------------------------------------------------------------
         public IList<VettingQueueItemDto> GetVettingQueue()
         {
             var list = new List<VettingQueueItemDto>();
 
-            string sql = "SELECT * FROM vw_VettingQueue ORDER BY last_review_date ASC";
+            // Only show engineers who are still pending
+            string sql = "SELECT * FROM vw_VettingQueue WHERE current_vet_status = 'pending' ORDER BY last_review_date ASC";
 
             using (var reader = SqlHelper.ExecuteReaderText(sql))
             {
@@ -30,25 +28,21 @@ namespace Bridgeway.BLL.SP
                         CurrentStatus = reader["current_vet_status"]?.ToString(),
                         VettingScore  = reader["vetting_score"] == DBNull.Value ? 0 : Convert.ToDecimal(reader["vetting_score"]),
                         NumReviews    = Convert.ToInt32(reader["num_reviews"]),
-                        // FIXED: Read as String, do not Convert.ToInt32
                         PriorityLevel = reader["priority_level"]?.ToString() 
                     });
                 }
             }
-
             return list;
         }
 
-        // ------------------------------------------------------------
-        // 2. Create Vetting Review (sp_CreateVettingReview)
-        // ------------------------------------------------------------
         public void CreateVettingReview(VettingReviewDto review)
         {
+            // 1. Create the Review Record
             var parameters = new[]
             {
                 new SqlParameter("@EngineerId", review.EngineerId),
-                new SqlParameter("@ReviewerId", review.ReviewerUserId), // Matches SQL param name
-                new SqlParameter("@ReviewStatus", (object?)review.Decision ?? DBNull.Value), // Map Decision -> ReviewStatus
+                new SqlParameter("@ReviewerId", review.ReviewerUserId), 
+                new SqlParameter("@ReviewStatus", (object?)review.Decision ?? DBNull.Value), 
                 new SqlParameter("@SkillsVerified", review.SkillsVerified),
                 new SqlParameter("@ExperienceVerified", review.ExperienceVerified),
                 new SqlParameter("@PortfolioVerified", review.PortfolioVerified),
@@ -57,6 +51,17 @@ namespace Bridgeway.BLL.SP
             };
 
             SqlHelper.ExecuteNonQuery("sp_CreateVettingReview", parameters);
+
+            // 2. FORCE UPDATE the Engineer Profile Status (The Fix)
+            string updateSql = @"
+                UPDATE tbl_Engineer_Profile 
+                SET vet_status = @NewStatus 
+                WHERE engineer_id = @EngId";
+
+            SqlHelper.ExecuteNonQueryText(updateSql, 
+                new SqlParameter("@NewStatus", review.Decision), // 'approved' or 'rejected'
+                new SqlParameter("@EngId", review.EngineerId)
+            );
         }
     }
 }

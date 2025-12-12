@@ -1,0 +1,61 @@
+@model Bridgeway.Web.Models.JobCandidatesViewModel
+
+@{
+    ViewData["Title"] = "Top Recommendations";
+    var candidates = Model.Candidates;
+}
+
+<link rel="stylesheet" href="~/css/client/globals.css" />
+<link rel="stylesheet" href="~/css/client/styleguide.css" />
+<link rel="stylesheet" href="~/css/client/top-recommendations.css" />
+
+<div class="top-recommendations">
+    <div class="rectangle-51"></div>
+    <div class="text-wrapper-48">BRIDGEWAY</div>
+    <div class="text-wrapper-49">TOP RECOMMENDATIONS</div>
+
+    <div class="rectangle-53" style="height: 1200px;"></div> <a href="@Url.Action("Dashboard", "Client")">
+        <button class="button-linkout-7"><div class="text-7">Home</div></button>
+    </a>
+
+    <div class="text-wrapper-51" style="top: 480px; left: 250px;">Engineer Name</div>
+    <div class="text-wrapper-51" style="top: 480px; left: 600px;">Match Score</div>
+    <div class="text-wrapper-51" style="top: 480px; left: 900px;">Status</div>
+    
+    @if (candidates != null && candidates.Count > 0)
+    {
+        int topPos = 550;
+        int rank = 1;
+        
+        foreach (var eng in candidates)
+        {
+            <div style="position: absolute; top: @(topPos)px; left: 250px; width: 1200px; height: 60px; background-color: #080921; border-radius: 5px; display: flex; align-items: center; padding: 0 20px;">
+                
+                <div style="color: white; font-family: 'DM Sans'; font-size: 24px; width: 50px;">#@rank</div>
+                
+                <div style="color: white; font-family: 'DM Sans'; font-size: 24px; width: 300px;">
+                    @eng.FullName
+                </div>
+
+                <div style="color: #4a90e2; font-family: 'DM Sans'; font-size: 24px; width: 300px;">
+                    @eng.MatchScore?.ToString("0.0") %
+                </div>
+
+                <div style="color: white; font-family: 'DM Sans'; font-size: 24px;">
+                    @eng.AvailabilityStatus
+                </div>
+
+                <a href="#" style="margin-left: auto; color: #4a90e2; text-decoration: underline;">View Profile</a>
+            </div>
+
+            topPos += 80;
+            rank++;
+        }
+    }
+    else
+    {
+        <div class="text-wrapper-50" style="top: 600px; text-align: center; width: 100%;">
+            No candidates found yet. Try running the matching algorithm.
+        </div>
+    }
+</div>

@@ -1,40 +1,53 @@
-@model Bridgeway.Web.Models.EngineerProfileViewModel    //form fields bound to this type
+@model Bridgeway.Web.Models.EngineerProfileViewModel
 
-<h2>My Profile</h2>
-
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(m => m.EngineerId)
-
-    <div>
-        <label>Full Name</label>
-        @Html.TextBoxFor(m => m.FullName)
-    </div>
-
-    <div>
-        <label>Years of Experience</label>
-        @Html.TextBoxFor(m => m.YearsExperience)
-    </div>
-
-    <div>
-        <label>Timezone</label>
-        @Html.TextBoxFor(m => m.Timezone)
-    </div>
-
-    <div>
-        <label>Availability</label>
-        @Html.TextBoxFor(m => m.AvailabilityStatus)
-    </div>
-
-    <div>
-        <label>Skills (comma separated)</label>
-        @Html.TextBoxFor(m => m.SkillsList)
-    </div>
-
-    <button type="submit">Save</button>
+@{
+    ViewData["Title"] = "My Profile";
 }
 
-@if (TempData["Message"] != null)
-{
-    <p>@TempData["Message"]</p>
-}
+<link rel="stylesheet" href="~/css/home/globals.css" />
+<link rel="stylesheet" href="~/css/home/styleguide.css" />
+<link rel="stylesheet" href="~/css/home/engineer-profile.css" />
+
+<div class="engineer-profile">
+    <div class="rectangle-23"></div>
+    <div class="rectangle-26"></div>
+    
+    <a href="@Url.Action("Dashboard", "Engineer")">
+        <button class="button-back-profile" type="button">
+            <div class="text-back-profile">← Back</div>
+        </button>
+    </a>
+
+    <div class="text-wrapper-44">Personal Information</div>
+    <div class="text-wrapper-45">Skills Section</div>
+
+    <form method="post" action="@Url.Action("Profile", "Engineer")">
+        @Html.HiddenFor(m => m.EngineerId)
+        
+        <input type="text" name="FullName" value="@Model.FullName" class="rectangle-27" style="padding-left:15px; font-size:20px;" />
+        <div class="text-wrapper-46" style="pointer-events:none;">Full Name</div>
+
+        <input type="text" name="Timezone" value="@Model.Timezone" class="rectangle-28" style="padding-left:15px; font-size:20px;" />
+        <div class="text-wrapper-48" style="pointer-events:none;">Timezone</div>
+
+        <input type="text" name="AvailabilityStatus" value="@Model.AvailabilityStatus" class="rectangle-30" style="padding-left:15px; font-size:20px;" />
+        <div class="text-wrapper-51" style="pointer-events:none;">Availability Status</div>
+
+        <input type="number" name="YearsExperience" value="@Model.YearsExperience" class="rectangle-29" style="padding-left:15px; font-size:20px;" />
+        <div class="text-wrapper-49" style="pointer-events:none;">Years of Experience</div>
+
+        <input type="hidden" name="AvailabilityStatusId" value="1" />
+
+        <div class="rectangle-31" style="display:flex; align-items:center; padding-left:15px; font-size:20px; background-color:#ccc;">
+            User Email (Fixed)
+        </div>
+        <div class="text-wrapper-47" style="pointer-events:none;">Email (fixed)</div>
+
+        <textarea name="SkillsList" class="rounded-rectangle" style="padding:15px; font-size:20px; resize:none;">@Model.SkillsList</textarea>
+        <div class="text-wrapper-50" style="pointer-events:none;">List of Skills (comma separated)</div>
+
+        <button type="submit" class="button-linkout-7" style="border:none;">
+            <div class="text-6">Save Changes</div>
+        </button>
+    </form>
+</div>

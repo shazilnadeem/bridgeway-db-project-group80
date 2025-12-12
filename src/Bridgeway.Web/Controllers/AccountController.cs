@@ -1,7 +1,7 @@
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Bridgeway.Domain.Interfaces;
 using Bridgeway.Web.Models;
 using Bridgeway.Web.Services;
@@ -12,16 +12,15 @@ namespace Bridgeway.Web.Controllers
     {
         private readonly string _connStr;
 
-        public AccountController()
+        // Inject IConfiguration to get the connection string safely
+        public AccountController(IConfiguration config)
         {
-            var cs = ConfigurationManager.ConnectionStrings["BridgewayDb"];
-            if (cs == null || string.IsNullOrWhiteSpace(cs.ConnectionString))
+            _connStr = config.GetConnectionString("BridgewayDb");
+            
+            if (string.IsNullOrEmpty(_connStr))
             {
-                throw new InvalidOperationException(
-                    "Connection string 'BridgewayDb' is missing in Web.config.");
+                throw new InvalidOperationException("Connection string 'BridgewayDb' is not found.");
             }
-
-            _connStr = cs.ConnectionString;
         }
 
         // -------------------
