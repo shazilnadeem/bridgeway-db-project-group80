@@ -7,8 +7,8 @@ namespace Bridgeway.ConsoleApp
 {
     public static class ConsoleFactory
     {
-        public static string ConnString = "Server=localhost,1433;Database=BridgewayDB;User Id=sa;Password=Shazee03!;TrustServerCertificate=True;";
-        
+        // public static string ConnString = "Server=localhost,1433;Database=BridgewayDB;User Id=sa;Password=Shazee03!;TrustServerCertificate=True;";
+        public static string ConnString = "Server=localhost,1433;Database=BridgewayDB;User Id=sa;Password=YourStrong!Password123;TrustServerCertificate=True;";
         public static bool IsEfMode { get; set; } = false; 
 
         static ConsoleFactory()

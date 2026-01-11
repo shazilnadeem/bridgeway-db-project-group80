@@ -1,0 +1,8 @@
+Field,Value
+
+Server Name/Hostname,localhost
+Database,(leave empty)
+Authentication Type,SQL Login
+User Name,sa
+Password,YourStrong!Password123
+Trust Server Certificate,True (box ticked)

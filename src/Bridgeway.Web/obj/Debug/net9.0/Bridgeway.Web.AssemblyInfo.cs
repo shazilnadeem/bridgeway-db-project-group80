@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bridgeway.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa5573d16096462dd7c26bc9d7377d85200c82b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bc7ee28b3f115da58ebd365423dbc12be1c737a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bridgeway.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bridgeway.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
